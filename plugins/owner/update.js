@@ -1,10 +1,10 @@
-import { execSync } from ('child_process')
-let handler = async (m, { conn, text }) => {
-  if (global.conn.user.jid == conn.user.jid) {
-    let stdout = execSync('git pull https://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:x-oauth-basic@github.com/zulganz/bnadrv2.git')
-    require('fs').readdirSync('plugins').map(v=>global.reload('', v))
-    conn.reply(m.chat, stdout.toString(), m)
-  }
+import { execSync } from 'child_process'
+import fs from 'fs'
+let handler = async (m, { conn, text, isROwner }) => {
+if (!text) throw `Masukkan Link Repo Github Bot Ini`
+    let stdout = execSync('git remote set-url origin ' + text + ' ' + '&& git pull ' + (text ? ' ' + text : ''))
+    if (isROwner) fs.readdirSync('plugins').map(v => global.reload('', v))
+    m.reply(stdout.toString())
 }
 handler.help = ['update']
 handler.tags = ['host']
