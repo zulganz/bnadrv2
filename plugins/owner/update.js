@@ -3,7 +3,7 @@ import fs from 'fs'
 let handler = async (m, { conn, text, isROwner }) => {
 if (!text) throw `Masukkan Link Repo Github Bot Ini`
     let stdout = execSync('git remote set-url origin ' + text + ' ' + '&& git pull ' + (text ? ' ' + text : ''))
-    if (isROwner) fs.readdirSync('plugins').map(v => reload('', v))
+    //if (isROwner) fs.readdirSync('plugins').map(v => reload('', v))
     m.reply(stdout.toString())
 }
 handler.help = ['update']
