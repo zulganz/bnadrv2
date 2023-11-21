@@ -19,8 +19,8 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 			})
 		} catch (e) {
 			console.log(e)
-			throw e
 			await conn.sendMsg(m.chat, { image: img, jpegThumbnail: img, caption: '*DONE*' }, { quoted: m })
+			throw e
 		}
 	} else return m.reply('Reply / tag Sticker')
 }
