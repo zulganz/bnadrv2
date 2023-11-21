@@ -33,7 +33,6 @@ let handler = async (m, { conn, args }) => {
 handler.menufun = ['bank <opts>']
 
 handler.tagsfun = ['rpg']
-handler.tag = ['rpg']
 handler.tags = ['rpg']
 handler.help = ['bank <opts>']
 handler.command = /^(bank|atm)$/i

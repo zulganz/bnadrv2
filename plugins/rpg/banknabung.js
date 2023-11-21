@@ -18,7 +18,6 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 handler.menufun = ['nabung <jumlah>']
 
 handler.tagsfun = ['rpg']
-handler.tag = ['rpg']
 handler.tags = ['rpg']
 handler.help = ['nabung <jumlah>']
 handler.command = /^((t|n)abung(all)?)$/i

@@ -45,7 +45,7 @@ let handler = async (m, { conn }) => {
 handler.menufun = ['levelup']
 
 handler.tagsfun = ['rpg']
-handler.tag = ['rpg']
+handler.tags = ['rpg']
 handler.command = /^(level(up)?)$/i
 
 export default handler
