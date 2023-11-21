@@ -1,7 +1,7 @@
 const teks = '0 - Ya\n1 - Tidak\n2 - Saya Tidak Tau\n3 - Mungkin\n4 - Mungkin Tidak\n5 - Kembali ke pertanyaan sebelumnya'
 
 export async function before(m) {
-    if (global.db.data.users[m.sender].banned) return
+    if (db.data.users[m.sender].banned) return
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text) return !0
     this.akinator = this.akinator || {};
     if (!this.akinator[m.sender] || m.quoted.id != this.akinator[m.sender].msg.key.id) return
