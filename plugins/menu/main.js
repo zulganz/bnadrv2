@@ -9,12 +9,12 @@ let tags = {
 	'submenu': '🎪 *SUB MENU*',
 	'searching': '🔎 *SEARCHING*',
 	'werewolf': '🐺 *WEREWOLF*',
+	'rpg': '🎮 *RPG MENU*',
 	'information': '🤖 *INFORMATION*',
 	'entertainment': '🎡 *ENTERTAINMENT*',
 	'primbon': '🎆 *PRIMBON*',
 	'creator': '🖱💻 *CREATOR*',
-	'tools': '✏️ *TOOLS MENU*',
-	'rpg': '🎮 *RPG MENU*'
+	'tools': '✏️ *TOOLS MENU*'
 }
 const defaultMenu = {
 	before: `
