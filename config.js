@@ -1,6 +1,7 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
+import { pickRandom } from './lib/func'
 
 // Real Owner moved to db.data.datas.rowner
 global.mods = ['6282281237299'] // Developer / Mods Number
@@ -22,7 +23,7 @@ global.APIKeys = { // APIKey Here
 	'https://api.zeks.xyz': 'apivinz',
 	'https://pencarikode.xyz': 'pais',
 	'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-	'https://api.lolhuman.xyz': 'apikeylu'
+	'https://api.lolhuman.xyz': pickRandom['IchanZX', 'GataDios']
 }
 
 global.multiplier = 69 // The higher, The harder levelup
