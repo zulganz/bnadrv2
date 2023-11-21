@@ -8,7 +8,7 @@ import os from 'os'
 let tags = {
 	'submenu': '🎪 *SUB MENU*',
 	'searching': '🔎 *SEARCHING*',
-	'werewolf ': '🐺 *WEREWOLF*',
+	'werewolf': '🐺 *WEREWOLF*',
 	'information': '🤖 *INFORMATION*',
 	'entertainment': '🎡 *ENTERTAINMENT*',
 	'primbon': '🎆 *PRIMBON*',

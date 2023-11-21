@@ -54,8 +54,8 @@ const handler = async (m, { conn, args }) => {
         });
     }
 }
-handler.tags = ['werewolf'];
-handler.help = ['wwpc'];
+handler.help = ['totalfitur']
+handler.tags = ['werewolf']
 handler.command = ['wwpc'];
 
 export default handler;
