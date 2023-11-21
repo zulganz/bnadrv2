@@ -39,6 +39,7 @@
     "@bochilteam/scraper": "^4.2.4",
     "@whiskeysockets/baileys": "^6.5.0",
     "awesome-phonenumber": "^6.1.0",
+    "aki-api": "*",
     "axios": "^1.5.1",
     "brainly-scraper-v2": "^2.2.8",
     "cfonts": "^3.2.0",
