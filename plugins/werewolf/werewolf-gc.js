@@ -487,8 +487,8 @@ const handler = async (m, {
         );
     }
 }
-handler.help = ['ww'];
 handler.tags = ['werewolf'];
+handler.help = ['ww'];
 handler.command = /^(ww|werewolf)$/i;
 handler.group = true
 
