@@ -15,6 +15,8 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 
 handler.menufun = ['tarik <jumlah>']
 handler.tagsfun = ['rpg']
+handler.tags = ['rpg']
+handler.help = ['tarik <jumlah>']
 handler.command = /^((t|n)arik(all)?)$/i
 
 export default handler
