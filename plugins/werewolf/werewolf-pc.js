@@ -54,7 +54,7 @@ const handler = async (m, { conn, args }) => {
         });
     }
 }
-handler.help = ['totalfitur']
+handler.help = ['wwpc [skill] [nomor]']
 handler.tags = ['werewolf']
 handler.command = ['wwpc'];
 

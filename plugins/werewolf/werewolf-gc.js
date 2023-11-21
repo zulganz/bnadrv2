@@ -488,7 +488,7 @@ const handler = async (m, {
     }
 }
 handler.tags = ['werewolf'];
-handler.help = ['ww'];
+handler.help = ['ww', 'werewolf'];
 handler.command = /^(ww|werewolf)$/i;
 handler.group = true
 

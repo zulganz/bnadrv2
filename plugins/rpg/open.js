@@ -13,8 +13,8 @@ let handler = async (m, { command, args, usedPrefix }) => {
 		if (type == 'common') {
 			let common = 0
 			let uncommon = 0
-			const money	= ranNumb(2000, 5000)
-			const exp	  = ranNumb(175, 225)
+			const money	= ranNumb(100, 1000)
+			const exp	  = ranNumb(50, 225)
 			const trash	= ranNumb(10, 30)
 			const potion   = ranNumb(1, 3)
 
