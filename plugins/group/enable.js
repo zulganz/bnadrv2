@@ -87,7 +87,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isBotAdmin, 
 				global.dfail('botAdmin', m, conn)
 				throw false
 			}
-			chat.game = true
+			chat.game = isEnable
 			break
 		case 'antilink':
 			if (!m.isGroup) {
