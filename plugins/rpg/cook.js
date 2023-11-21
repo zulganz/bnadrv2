@@ -182,7 +182,10 @@ let handler = async (m, { command, usedPrefix, args }) => {
 }
 
 handler.menufun = ['cook'].map(v => v + ' [item] [count]')
+
+
 handler.tagsfun = ['rpg']
+handler.tags = ['rpg']
 handler.command = /^((cook(ing)?)|((me)?masak))$/i
 
 handler.cooldown = cooldown

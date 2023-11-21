@@ -32,6 +32,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 }
 
 handler.menufun = ['bansos']
+
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
 handler.help = ['bansos']

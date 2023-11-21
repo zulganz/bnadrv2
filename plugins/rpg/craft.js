@@ -103,7 +103,9 @@ let handler = async (m, { command, usedPrefix, args }) => {
 }
 
 handler.menufun = ['craft'].map(v => v + ' [item] [count]')
+
 handler.tagsfun = ['rpg']
+handler.tags = ['rpg']
 handler.command = /^(craft(ing)?)$/i
 
 handler.premium = true

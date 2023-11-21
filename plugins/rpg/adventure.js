@@ -57,7 +57,9 @@ let handler = async (m, { usedPrefix, command }) => {
 }
 
 handler.menufun = ['adventure', 'petualang', 'berpetualang', 'mulung']
+
 handler.tagsfun = ['rpg']
+handler.tag = ['rpg']
 handler.tags = ['rpg']
 handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung']
 handler.command = /^(adventure|(ber)?petualang(ang)?|mulung)$/i

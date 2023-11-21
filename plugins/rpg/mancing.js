@@ -60,7 +60,10 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 }
 
 handler.menufun = ['mancing']
+
+
 handler.tagsfun = ['rpg']
+handler.tags = ['rpg']
 handler.command = /^(mancing|fishing)$/i
 
 handler.cooldown = cooldown

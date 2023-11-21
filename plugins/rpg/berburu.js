@@ -67,9 +67,11 @@ let handler = async (m, { conn, usedPrefix }) => {
 }
 
 handler.menufun = ['berburu']
-handler.tagsfun = ['rpg']
-handler.command = /^(berburu|hunt)$/i
 
+handler.tagsfun = ['rpg']
+handler.tags = ['rpg']
+handler.command = /^(berburu|hunt)$/i
+handler.help = ['berburu']
 handler.cooldown = cooldown
 handler.premium = true
 

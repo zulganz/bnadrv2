@@ -20,7 +20,10 @@ let handler = async (m) => {
 }
 
 handler.menufun = ['daily', 'claim']
+
+
 handler.tagsfun = ['rpg']
+handler.tags = ['rpg']
 handler.command = /^(daily|claim)$/i
 
 handler.cooldown = cooldown
