@@ -1136,7 +1136,7 @@ export async function handler(chatUpdate) {
 						for (let key of Object.values(global.APIKeys))
 							text = text.replace(new RegExp(key, "g"), "#HIDDEN#")
 						if (e.name)
-							for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
+							for (let [jid] of db.data.datas.rowner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 								let data = (await this.onWhatsApp(jid))[0] || {}
 								if (data.exists)
 									return m.reply(`*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(" ")}\n📄 *Error Logs:*\n\n${text}`.trim(), data.jid)
