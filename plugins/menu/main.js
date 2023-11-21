@@ -9,7 +9,6 @@ let tags = {
 	'submenu': '🎪 *SUB MENU*',
 	'searching': '🔎 *SEARCHING*',
 	'information': '🤖 *INFORMATION*',
-	'werewolf': '🐺 *WEREWOLF*',
 	'entertainment': '🎡 *ENTERTAINMENT*',
 	'primbon': '🎆 *PRIMBON*',
 	'creator': '🖱💻 *CREATOR*',
