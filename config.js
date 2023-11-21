@@ -1,7 +1,7 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
-import { pickRandom } from './lib/func'
+import { pickRandom } from './lib/func.js'
 
 // Real Owner moved to db.data.datas.rowner
 global.mods = ['6282281237299'] // Developer / Mods Number
