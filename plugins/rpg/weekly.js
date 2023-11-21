@@ -33,6 +33,7 @@ handler.menufun = ['weekly']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['weekly']
 handler.command = /^(weekly)$/i
 
 handler.cooldown = cooldown

@@ -24,6 +24,7 @@ handler.menufun = ['daily', 'claim']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['daily', 'claim']
 handler.command = /^(daily|claim)$/i
 
 handler.cooldown = cooldown

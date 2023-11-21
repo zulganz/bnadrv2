@@ -192,6 +192,7 @@ handler.menufun = ['open', 'gacha'].map(v => v + ' [crate] [count]')
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['open', 'gacha'].map(v => v + ' [crate] [count]')
 handler.command = /^(open|buka|gacha)$/i
 
 handler.premium = true

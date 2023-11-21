@@ -23,6 +23,7 @@ handler.menufun = ['heal']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['heal']
 handler.command = /^(heal)$/i
 
 export default handler

@@ -106,6 +106,7 @@ handler.menufun = ['craft'].map(v => v + ' [item] [count]')
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['craft'].map(v => v + ' [item] [count]')
 handler.command = /^(craft(ing)?)$/i
 
 handler.premium = true

@@ -40,6 +40,7 @@ handler.menufun = ['profile']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['profile']
 handler.command = /^(profile?)$/i
 
 export default handler

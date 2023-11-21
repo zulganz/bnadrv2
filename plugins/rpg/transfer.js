@@ -73,6 +73,7 @@ handler.menufun = ['transfer', 'tf'].map(v => v + ' [type] [jumlah] [@tag]')
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['transfer', 'tf'].map(v => v + ' [type] [jumlah] [@tag]')
 handler.command = /^(transfer|tf)$/i
 
 handler.group = true

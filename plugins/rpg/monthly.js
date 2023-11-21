@@ -28,6 +28,7 @@ handler.menufun = ['monthly']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['monthly']
 handler.command = /^(monthly)$/i
 
 handler.cooldown = cooldown

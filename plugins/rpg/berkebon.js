@@ -48,6 +48,7 @@ handler.menufun = ['berkebun']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['berkebun']
 handler.command = /^(berkeb(o|u)n)$/i
 
 handler.cooldown = cooldown

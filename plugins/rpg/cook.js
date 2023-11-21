@@ -186,6 +186,7 @@ handler.menufun = ['cook'].map(v => v + ' [item] [count]')
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['cook'].map(v => v + ' [item] [count]')
 handler.command = /^((cook(ing)?)|((me)?masak))$/i
 
 handler.cooldown = cooldown

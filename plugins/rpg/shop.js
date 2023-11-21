@@ -511,6 +511,7 @@ handler.menufun = ['buy', 'sell'].map(v => v + ' [item] [count]')
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.command = /^(buy|beli|shop|sell|jual)$/i
 
 handler.disabled = false

@@ -64,6 +64,7 @@ handler.menufun = ['mancing']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['mancing']
 handler.command = /^(mancing|fishing)$/i
 
 handler.cooldown = cooldown

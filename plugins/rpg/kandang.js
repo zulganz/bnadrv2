@@ -27,6 +27,7 @@ handler.menufun = ['kandang']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['kandang']
 handler.command = /^(kandang)$/i
 
 export default handler

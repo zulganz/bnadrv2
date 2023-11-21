@@ -117,6 +117,7 @@ handler.menufun = ['build'].map(v => v + ' [item] [count]')
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['build'].map(v => v + ' [item] [count]')
 handler.command = /^(build(ing)?)$/i
 
 handler.premium = true

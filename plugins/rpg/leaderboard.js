@@ -60,6 +60,7 @@ handler.menufun = ['leaderboard [jumlah user]', 'lb [jumlah user]']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['leaderboard [jumlah user]', 'lb [jumlah user]']
 handler.command = /^(leaderboard|lb)$/i
 
 export default handler

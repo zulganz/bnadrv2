@@ -22,6 +22,7 @@ handler.menufun = ['limit']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['limit']
 handler.command = /^(limit)$/i
 
 export default handler

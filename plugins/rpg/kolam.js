@@ -28,6 +28,7 @@ handler.menufun = ['kolam']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['kolam']
 handler.command = /^(kolam)$/i
 
 export default handler

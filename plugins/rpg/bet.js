@@ -85,6 +85,7 @@ handler.menufun = ['judi [jumlah]']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['judi [jumlah]']
 handler.command = /^(judi|bet)$/i
 
 handler.group = true

@@ -16,6 +16,7 @@ handler.menufun = ['buah']
 
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
+handler.help = ['buah']
 handler.command = /^((list)?(buah|fruits?))$/i
 
 export default handler

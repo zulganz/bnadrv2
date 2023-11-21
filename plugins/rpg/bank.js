@@ -31,7 +31,6 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.menufun = ['bank <opts>']
-
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
 handler.help = ['bank <opts>']
