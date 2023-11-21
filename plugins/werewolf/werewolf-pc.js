@@ -56,7 +56,7 @@ const handler = async (m, { conn, args }) => {
 }
 
 handler.help = ['wwpc'];
-handler.tags = ['rpg'];
+handler.tags = ['werewolf'];
 handler.command = ['wwpc'];
 
 export default handler;

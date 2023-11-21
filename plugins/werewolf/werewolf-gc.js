@@ -488,7 +488,8 @@ const handler = async (m, {
     }
 }
 handler.help = ['ww'];
-handler.tags = ['rpg'];
+handler.tags = ['werewolf'];
 handler.command = /^(ww|werewolf)$/i;
 handler.group = true
+
 export default handler;
