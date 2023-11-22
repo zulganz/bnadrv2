@@ -7,7 +7,7 @@ var handler = async (m, {
 	text
 }) => {
 	var teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
-	var stiker = await createSticker((await attp(teks)).result, packname, author)
+	var stiker = await createSticker((await attp(teks)).result,  { pack: packname, author: author })
 	conn.sendFile(m.chat, stiker, 'attp.webp', '', null, false, {
 		asSticker: true
 	})
