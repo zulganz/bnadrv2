@@ -1,5 +1,6 @@
 import request from 'request'
 import { createSticker } from 'wa-sticker-formatter'
+import axios from 'axios'
 var handler = async (m, {
 	conn,
 	text
