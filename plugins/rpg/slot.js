@@ -80,7 +80,8 @@ ${spins7}|${spins8}|${spins9}
 `, m)
     } catch (e) {
         console.log(e)
-        conn.reply(m.chat, 'Error', m)
+        throw e
+        //conn.reply(m.chat, 'Error', m)
     } finally {
         delete conn.slots[m.chat]
     }
