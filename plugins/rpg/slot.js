@@ -4,7 +4,7 @@ import fs from "fs"
 import { ranNumb } from '../../lib/func.js'
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
+//let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
 let users = global.db.data.users[m.sender]
     conn.slots = conn.slots ? conn.slots : {}
     if (m.chat in conn.slots) return m.reply('Masih ada Yang Melakukan Slots Disini, Tunggu Sampai selesai!!')
