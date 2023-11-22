@@ -1,6 +1,7 @@
 import request from 'request'
 import { createSticker } from 'wa-sticker-formatter'
 import axios from 'axios'
+import cheerio from 'cheerio'
 var handler = async (m, {
 	conn,
 	text
