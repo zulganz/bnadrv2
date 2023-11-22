@@ -1,5 +1,5 @@
 import request from 'request'
-import { sticker } from '../../lib/sticker.js'
+import { createSticker } from 'wa-sticker-formatter'
 import axios from 'axios'
 import cheerio from 'cheerio'
 var handler = async (m, {
@@ -7,7 +7,7 @@ var handler = async (m, {
 	text
 }) => {
 	var teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
-	var stiker = await sticker((await attp(teks)).result, packname, author)
+	var stiker = await createSticker((await attp(teks)).result, packname, author)
 	conn.sendFile(m.chat, stiker, 'attp.webp', '', null, false, {
 		asSticker: true
 	})
