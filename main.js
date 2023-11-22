@@ -141,7 +141,7 @@ async function _quickTest() {
 	📅 Hari: ${currentTime.toLocaleDateString('id-ID', { weekday: 'long' })}
 	📝 Deskripsi: *Bot Bandar sudah aktif*.
 		 `;
-		 await conn.sendMessage(global.rowner[0] + "@s.whatsapp.net", {
+		 await conn.sendMSG(global.rowner[0] + "@s.whatsapp.net", {
 			 text: infoMsg,
 			 mentions: [global.rowner[0] + "@s.whatsapp.net", jid]
 		 }, {
