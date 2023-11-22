@@ -127,7 +127,8 @@ async function _quickTest() {
 	if (!s.ffmpeg) (conn?.logger || console).warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
 	if (s.ffmpeg && !s.ffmpegWebp) (conn?.logger || console).warn('Stickers may not animated without libwebp on ffmpeg (--enable-libwebp while compiling ffmpeg)')
 	if (!s.convert && !s.magick && !s.gm) (conn?.logger || console).warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
-	const currentTime = new Date();
+	async function startMSG(conn) {
+		const currentTime = new Date();
 	const pingStart = new Date();
 	const {
 		jid,
@@ -151,8 +152,10 @@ async function _quickTest() {
 			 quoted: null
 		 })
 
+	}
 }
 
 _quickTest()
+startMSG()
 	.then(() => (conn?.logger?.info || console.log)('Quick Test Done'))
 	.catch(console.error)
