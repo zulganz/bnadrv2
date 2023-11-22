@@ -1,4 +1,5 @@
 import { Chess } from 'chess.js';
+import db from '../../lib/database.js'
 
 export async function before(m) {
     if (db.data.users[m.sender].banned) return;
