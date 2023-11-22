@@ -127,6 +127,30 @@ async function _quickTest() {
 	if (!s.ffmpeg) (conn?.logger || console).warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
 	if (s.ffmpeg && !s.ffmpegWebp) (conn?.logger || console).warn('Stickers may not animated without libwebp on ffmpeg (--enable-libwebp while compiling ffmpeg)')
 	if (!s.convert && !s.magick && !s.gm) (conn?.logger || console).warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
+	const currentTime = new Date();
+	const pingStart = new Date();
+	const {
+		jid,
+		name
+	} = conn.user;
+	const infoMsg = `
+	ℹ️ *Bot Info:*
+	
+	🕒 Waktu sekarang: ${currentTime}
+	👤 Nama: Bandar
+	⏱️ Kecepatan ping: ${pingStart - new Date()}ms
+	📅 Tanggal: ${currentTime.toDateString()}
+	🕰️ Jam: ${currentTime.toLocaleTimeString()}
+	📅 Hari: ${currentTime.toLocaleDateString('id-ID', { weekday: 'long' })}
+	📝 Deskripsi: *Bot Bandar sudah aktif*.
+		 `;
+		 await conn.sendMessage(global.rowner[0] + "@s.whatsapp.net", {
+			 text: infoMsg,
+			 mentions: [global.rowner[0] + "@s.whatsapp.net", jid]
+		 }, {
+			 quoted: null
+		 })
+
 }
 
 _quickTest()
