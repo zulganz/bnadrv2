@@ -4,6 +4,7 @@ let handler = async (m, { conn, command, usedPrefix}) => {
 	const data = [...global.rowner.filter(([id, isCreator]) => id && isCreator)]
 	//if (data.length == 0) throw `*[ ! ] Real Owner belum di set.*\n\n*${usedPrefix}addrealowner* untuk menambahkan Owner Asli.\n\n*${usedPrefix}addowner* untuk menambahkan Owner Biasa.`
 	await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+	await m.reply('ini Nomor nya kak')
 }
 
 handler.menugroup = ['owner']
