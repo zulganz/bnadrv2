@@ -123,5 +123,6 @@ export async function before(m) {
             }
         }
     }
-}
+
     return true;
+}
