@@ -153,9 +153,9 @@ async function _quickTest() {
 		 })
 
 	}
+	startMSG()
 }
 
 _quickTest()
-startMSG()
 	.then(() => (conn?.logger?.info || console.log)('Quick Test Done'))
 	.catch(console.error)
