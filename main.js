@@ -130,10 +130,6 @@ async function _quickTest() {
 	async function startMSG(conn) {
 		const currentTime = new Date();
 	const pingStart = new Date();
-	const {
-		jid,
-		name
-	} = conn.user;
 	const infoMsg = `
 	ℹ️ *Bot Info:*
 	
