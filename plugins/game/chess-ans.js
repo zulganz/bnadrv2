@@ -1,7 +1,7 @@
 import { Chess } from 'chess.js';
 
 export async function before(m) {
-    if (global.db.data.users[m.sender].banned) return;
+    if (db.data.users[m.sender].banned) return;
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text) return true;
 
     this.chessgame = this.chessgame || {};
