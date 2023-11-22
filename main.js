@@ -33,7 +33,7 @@ say('Lightweight\nWhatsApp Bot', {
 	align: 'center',
 	gradient: ['red', 'magenta']
 })
-say(`'${name}' By @${author.name || author}`, {
+say(`'${name}' By @ZUL`, {
 	font: 'console',
 	align: 'center',
 	gradient: ['red', 'magenta']
