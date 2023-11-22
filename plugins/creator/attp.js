@@ -1,13 +1,11 @@
-var request = require('request');
-var {
-	sticker
-} = require('../lib/sticker.cjs');
+import request from 'request'
+import { createSticker } from 'wa-sticker-formatter'
 var handler = async (m, {
 	conn,
 	text
 }) => {
 	var teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
-	var stiker = await sticker((await attp(teks)).result, global.packname, global.author)
+	var stiker = await createSticker((await attp(teks)).result, global.packname, global.author)
 	conn.sendFile(m.chat, stiker, 'attp.webp', '', null, false, {
 		asSticker: true
 	})
