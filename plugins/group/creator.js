@@ -1,21 +1,13 @@
-import fetch from 'node-fetch'
-let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let pp = await conn.profilePictureUrl(who).catch(_ => thumbnailUrl.getRandom())
-let name = await conn.getName(who)
+import db from '../../lib/database.js'
 
-  const sentMsg = await conn.sendContact(m.chat, [
-    [global.rowner[0], `${await conn.getName(global.rowner[0] + '@s.whatsapp.net')}`, `💌 Developer Bot `, `Not Famous`, `zul@gmail.com`, `🇯🇵 japan`, `📍 https://github.com/zulganz`, `👤 Owner Bandar Bot`],
-    [`${conn.user.jid.split('@')[0]}`, `${await conn.getName(conn.user.jid)}`, `🎈 Whatsapp Bot`, `📵 Dont Spam`, `Nothing`, `🇯🇵 japan`, `📍 https://github.com/zulganz`, `Just a normal bot that sometimes has an error ☺`]
-  ], fkontak)
-  await conn.reply(m.chat,`Hello @${m.sender.split(`@`)[0]} Thats my owner, dont spam or i will block u`, sentMsg, {
-                mentions: [m.sender]
-            })
+let handler = async (m, { conn, command, usedPrefix}) => {
+	//const data = [...db.data.datas.rowner.filter(([id, isCreator]) => id && isCreator), ...db.data.datas.owner.filter(([id, isCreator]) => id && isCreator)]
+	//if (data.length == 0) throw `*[ ! ] Real Owner belum di set.*\n\n*${usedPrefix}addrealowner* untuk menambahkan Owner Asli.\n\n*${usedPrefix}addowner* untuk menambahkan Owner Biasa.`
+	await conn.sendContact(m.chat, global.rowner.map(([id, name]) => [id, name]), m)
 }
 
-handler.help = ['owner', 'creator']
-handler.tags = ['info']
-
+handler.menugroup = ['owner']
+handler.tagsgroup = ['group']
 handler.command = /^(owner|creator)$/i
 
 export default handler
