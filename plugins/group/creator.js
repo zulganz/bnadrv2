@@ -10,32 +10,6 @@ let handler = async (m, {
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
     let name = await conn.getName(who)
-
-    if (command == "creator") {
-        let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;Saya Owner Bandar;Bot;;Md\nFN:Saya Owner Bandar Bot WhatsApp, Md\nNICKNAME:👑 Owner Bandar Bot\nORG:Zul\nTITLE:BnDR\nitem1.TEL;waid=6282281237299:+62 822-8123-7299\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://s.id/Cerdasin62\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:izul@mail.com\nitem3.X-ABLabel:💌 Mail Owner Bandar\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🔖 14 april 2006\nEND:VCARD`
-        let tag_own = await conn.sendMessage(m.chat, {
-            contacts: {
-                displayName: "zul",
-                contacts: [{
-                    vcard
-                }]
-            },
-            contextInfo: {
-                externalAdReply: {
-                    title: "zul",
-                    mediaType: 1,
-                    previewType: 0,
-                    renderLargerThumbnail: true,
-                    sourceUrl: ''
-                }
-            }
-        }, {
-            quoted: fakes
-        })
-        await conn.reply(m.chat, `Halo kak @${m.sender.split("@")[0]} itu nomor team developerku, jangan di apa-apain ya kak😖`, tag_own, {
-            mentions: [m.sender]
-        })
-    }
     if (command == "owner") {
         try {
             const ownerPromises = global.rowner.map(async (item, index) => [
