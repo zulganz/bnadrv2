@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { createSticker } from 'wa-sticker-formatter'
+import { sticker } from '../../lib/sticker.js'
 var handler = async (m, {
  conn, 
  args, 
@@ -13,7 +13,7 @@ var handler = async (m, {
     var error = fs.readFileSync(`./media/sticker/emror.webp`)
     try {
         if (command == 'attp' || command == 'attp') {
-            var stiker = await createSticker(res, { packname })
+            var stiker = await sticker(res, { packname })
             await conn.sendFile(m.chat, stiker, 'emror.webp', '', m)
         }
     } catch (e) {
