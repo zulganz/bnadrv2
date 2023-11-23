@@ -1139,7 +1139,7 @@ export async function handler(chatUpdate) {
 									if (data.exists)
 										m.reply(`*Plugin:* ${m.plugin}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
 								}
-						m.reply(text)
+						//m.reply(text)
 						//m.reply('_*⚠️⚠️⚠️Seperti nya ada yang error mohon laporkan ini ke owner nya⚠️⚠️⚠️*_')
 					}
 				} finally {
