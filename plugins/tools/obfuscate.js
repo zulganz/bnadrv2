@@ -4,11 +4,6 @@ import JavaScriptObfuscator from 'javascript-obfuscator';
 const handler = async (m, { args, command, conn }) => {
     try {
         const q = m.quoted || m;
-        const mime = (q.msg || q).mimetype || '';
-
-        if (mime !== "application/js") {
-            return m.reply('Cuman Boleh File .js');
-        }
 
         // Download the media file
         const buffer = await q.download();
