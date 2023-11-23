@@ -1,5 +1,5 @@
 import db from '../../lib/database.js'
-export function before(m) {
+export function all(m) {
     let user = db.data.users[m.sender]
 
     //Health
