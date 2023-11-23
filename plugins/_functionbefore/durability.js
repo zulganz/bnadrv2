@@ -1,5 +1,6 @@
 import db from '../../lib/database.js'
 export async function all(m) {
+    try {
     let user = db.data.users[m.sender]
 
     //Health
@@ -48,5 +49,8 @@ export async function all(m) {
             user.bowdurability = 30
             user.bow -= 1
         }
+    }
+    } catch (e) {
+        console.log(e)
     }
 }
