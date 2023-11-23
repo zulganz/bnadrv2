@@ -1,5 +1,6 @@
 import fs from 'fs';
 import JavaScriptObfuscator from 'javascript-obfuscator';
+import { ranNumbs } from '../../lib/func.js';
 
 const handler = async (m, { args, command, conn }) => {
     try {
@@ -19,8 +20,11 @@ const handler = async (m, { args, command, conn }) => {
         const readjs = fs.readFileSync(buffer, 'utf8');
 
         const result = await Encrypt(readjs);
-        conn.sendFile(m.chat, result, 'obfus.js', 'Nih', m);
-
+        //make a path to save the file to tmp
+        let ran = ranNumbs(1, 999999999999999)
+        const output = fs.writeFileSync(`../../tmp/${ran}.js`, result);
+        
+        conn.sendFile(m.chat, output, `obfuscate.js`, m)
     } catch (err) {
         console.error(`Terjadi kesalahan: ${err.message}`);
         return m.reply(`Terjadi kesalahan saat mengobfuskasi file: ${err.message}`);
