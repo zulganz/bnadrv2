@@ -71,7 +71,8 @@ Terima kasih telah melakukan verifikasi. Data pengguna telah disimpan dengan ama
         }
     } catch (e) {
         console.log(e)
-        await m.reply(eror)
+        //await m.reply(eror)
+        throw e
     }
 }
 handler.help = ["daftar", "register"].map(v => v + " <nama>.<umur>");
