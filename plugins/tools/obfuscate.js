@@ -27,7 +27,18 @@ try {
     }
     const message = await Encrypt(docBuffer.toString('utf-8'));
     await m.reply(message);
-  } else {
+  }
+  //if the file is js
+  else if (text.endsWith('js')) {
+    let docBuffer;
+    if (m.quoted.mimetype) {
+      docBuffer = await m.quoted.download();
+    }
+    let input = fs.readFileSync(docBuffer, 'utf8');
+    let message = await Encrypt(input);
+    await m.reply(message);
+  }
+  else {
     const message = await Encrypt(text);
     await m.reply(message);
   }
