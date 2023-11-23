@@ -1140,7 +1140,7 @@ export async function handler(chatUpdate) {
 										m.reply(`*Plugin:* ${m.plugin}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
 								}
 						//m.reply(text)
-						conn.sendMessage(global.rowner[0] + '@s.whatsapp.net', text, { quoted: m })
+						m.reply('_*⚠️⚠️⚠️Seperti nya ada yang error mohon laporkan ini ke owner nya⚠️⚠️⚠️*_')
 					}
 				} finally {
 					// m.reply(util.format(_user))
