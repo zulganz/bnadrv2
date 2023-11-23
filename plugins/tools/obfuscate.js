@@ -16,7 +16,7 @@ const handler = async (m, { args, command, conn }) => {
             return m.reply('Input file size is too large. It must be below 3 MB.');
         }
 
-        const readjs = fs.readFileSync(buffer);
+        const readjs = fs.readFileSync(buffer, 'utf8');
 
         const result = await Encrypt(readjs);
         conn.sendFile(m.chat, result, 'obfus.js', 'Nih', m);
