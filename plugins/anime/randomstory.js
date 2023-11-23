@@ -23,6 +23,7 @@ handler.command = /^(stor(i|y)a?nime|a?nimestor(i|y))$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler
 
 const dir = [

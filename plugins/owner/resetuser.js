@@ -34,4 +34,5 @@ handler.command = /^((re)?setuser)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

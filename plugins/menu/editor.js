@@ -70,4 +70,5 @@ handler.help = ['menueditor']
 handler.tags = ['submenu']
 handler.command = /^(editorm(enu)?|m(enu)?editor)$/i
 
+handler.registered = true
 export default handler

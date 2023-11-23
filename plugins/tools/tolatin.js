@@ -15,4 +15,5 @@ handler.help = ['tolatin <teks>']
 handler.tags = ['tools']
 handler.command = /^((aksara)?tolatin)$/i
 
+handler.registered = true
 export default handler

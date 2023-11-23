@@ -16,4 +16,5 @@ handler.command = /^(me(m|n)fess?del(ete)?|del(ete)?me(m|n)fess?)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

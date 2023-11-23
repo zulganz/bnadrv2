@@ -31,4 +31,5 @@ handler.command = /^(mute|senyap)$/i
 
 handler.cooldown = cooldown
 
+handler.registered = true
 export default handler

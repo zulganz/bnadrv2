@@ -17,4 +17,5 @@ handler.command = /^(delcmd|cmddel)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

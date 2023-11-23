@@ -43,4 +43,5 @@ handler.command = /^(tebakbendera)$/i
 handler.premium = true
 handler.game = true
 
+handler.registered = true
 export default handler

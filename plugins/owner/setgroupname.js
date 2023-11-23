@@ -12,4 +12,5 @@ handler.command = /^(set((gc|gro?up)name|name(gc|gro?up))bot)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

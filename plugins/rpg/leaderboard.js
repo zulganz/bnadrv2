@@ -63,6 +63,7 @@ handler.tags = ['rpg']
 handler.help = ['leaderboard [jumlah user]', 'lb [jumlah user]']
 handler.command = /^(leaderboard|lb)$/i
 
+handler.registered = true
 export default handler
 
 function sort(property, ascending = true) {

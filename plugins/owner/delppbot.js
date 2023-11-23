@@ -9,4 +9,5 @@ handler.command = /^(del(botpp|ppbot))$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

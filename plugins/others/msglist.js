@@ -19,4 +19,5 @@ handler.command = /^(listmsg|msglist)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

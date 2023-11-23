@@ -22,4 +22,5 @@ handler.command = new RegExp
 
 handler.mods = true
 
+handler.registered = true
 export default handler

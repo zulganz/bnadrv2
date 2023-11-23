@@ -29,4 +29,5 @@ handler.command = /^(cecan2?|anony|bocil|china|harley|hijaber|indonesia|japan|ko
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

@@ -9,4 +9,5 @@ handler.menugroup = ['del', 'delete']
 handler.tagsgroup = ['group']
 handler.command = /^(d(el(ete)?)?)$/i
 
+handler.registered = true
 export default handler

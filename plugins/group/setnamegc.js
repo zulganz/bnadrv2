@@ -11,4 +11,5 @@ handler.admin = true
 handler.botAdmin = true
 handler.group = true
 
+handler.registered = true
 export default handler

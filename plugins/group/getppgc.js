@@ -14,4 +14,5 @@ handler.command = /^(getpp(gc|gro?up))$/i
 
 handler.group = true
 
+handler.registered = true
 export default handler

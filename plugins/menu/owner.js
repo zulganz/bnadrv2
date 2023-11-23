@@ -71,4 +71,5 @@ handler.help = ['menuowner']
 handler.tags = ['submenu']
 handler.command = /^(r?(eal)?ownerm(enu)?|m(enu)?r?(eal)?owner)$/i
 
+handler.registered = true
 export default handler

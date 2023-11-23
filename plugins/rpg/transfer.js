@@ -80,6 +80,7 @@ handler.group = true
 
 handler.disabled = false
 
+handler.registered = true
 export default handler
 
 function special(type) {

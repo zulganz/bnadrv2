@@ -9,6 +9,7 @@ handler.help = ['readmore <teks>|<teks>']
 handler.tags = ['tools']
 handler.command = /^(spoiler|hidetext|(read)?more|selengkapnya)$/i
 
+handler.registered = true
 export default handler
 
 const more = String.fromCharCode(8206)

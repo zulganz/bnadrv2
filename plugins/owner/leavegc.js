@@ -27,4 +27,5 @@ handler.command = /^(leaveg(c|ro?up)(all|semua)?)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

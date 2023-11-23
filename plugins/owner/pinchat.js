@@ -14,4 +14,5 @@ handler.command = /^((un)?pin(chats?))$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

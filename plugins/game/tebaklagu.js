@@ -42,6 +42,7 @@ handler.help = ['tebaklagu']
 handler.tags = ['game']
 handler.command = /^tebaklagu/i
 
+handler.registered = true
 export default handler
 
 const buttons = [

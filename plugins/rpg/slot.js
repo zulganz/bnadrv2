@@ -90,6 +90,7 @@ handler.help = ['slot', 'jackpot']
 handler.tags = ['rpg', 'game']
 handler.command = /^slots?|jac?kpot$/i
 
+handler.registered = true
 export default handler
 
 function pickRandom(list) {

@@ -19,5 +19,6 @@ handler.command = /^(addowner)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler
 

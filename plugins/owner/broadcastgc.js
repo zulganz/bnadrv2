@@ -31,4 +31,5 @@ handler.command = /^((bc|broadcast)(gc|gro?ups?)((hide)?tag)?)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

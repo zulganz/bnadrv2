@@ -44,4 +44,5 @@ handler.command = /^(emulate|simulasi)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler

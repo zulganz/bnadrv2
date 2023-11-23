@@ -28,4 +28,5 @@ handler.command = /^(((stic?ker)?wm(stic?ker)?)|(takestic?k(er)?)|colong)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

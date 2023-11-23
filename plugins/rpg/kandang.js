@@ -30,4 +30,5 @@ handler.tags = ['rpg']
 handler.help = ['kandang']
 handler.command = /^(kandang)$/i
 
+handler.registered = true
 export default handler

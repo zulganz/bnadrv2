@@ -22,6 +22,7 @@ handler.command = /^((harta)?tahta)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler
 
 import { spawn } from 'child_process'

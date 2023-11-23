@@ -24,4 +24,5 @@ handler.help = ['emojimix <1>|<2>']
 handler.tags = ['tools']
 handler.command = /^(emojimix)$/i
 
+handler.registered = true
 export default handler

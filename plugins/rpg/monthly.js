@@ -33,5 +33,6 @@ handler.command = /^(monthly)$/i
 
 handler.cooldown = cooldown
 
+handler.registered = true
 export default handler
 

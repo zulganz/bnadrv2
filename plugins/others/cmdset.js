@@ -24,4 +24,5 @@ handler.command = /^((set|add)cmd|cmd(set|add))$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

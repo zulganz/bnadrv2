@@ -9,4 +9,5 @@ handler.help = ['edit']
 handler.tags = ['tools']
 handler.command = /^(edit)$/i
 
+handler.registered = true
 export default handler

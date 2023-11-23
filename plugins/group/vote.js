@@ -21,4 +21,5 @@ handler.command = /^((up|de)vote)$/i
 
 handler.group = true
 
+handler.registered = true
 export default handler 

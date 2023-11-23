@@ -35,4 +35,5 @@ handler.command = /^(nom(o|e)rhoki)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

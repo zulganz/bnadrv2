@@ -16,4 +16,5 @@ handler.command = /^((un)?lockcmd|cmd(un)?lock)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

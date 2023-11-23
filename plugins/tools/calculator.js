@@ -35,4 +35,5 @@ handler.help = ['calculator <teks>']
 handler.tags = ['tools']
 handler.command = /^((c|k)al(c|k)u?(lator)?)$/i
 
+handler.registered = true
 export default handler

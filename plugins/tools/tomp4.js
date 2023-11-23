@@ -14,4 +14,5 @@ handler.help = ['ptvtovideo','tomp4']
 handler.tags = ['tools']
 handler.command = /^((ptv)?to(mp4|video))$/i
 
+handler.registered = true
 export default handler

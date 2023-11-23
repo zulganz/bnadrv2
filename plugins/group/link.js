@@ -18,4 +18,5 @@ handler.menugroup = ['linkgroup']
 handler.tagsgroup = ['group']
 handler.command = /^(link(gc|gro?up)?|(gc|gro?up)link)$/i
 
+handler.registered = true
 export default handler

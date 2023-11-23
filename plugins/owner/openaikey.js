@@ -26,4 +26,5 @@ handler.command = /^((add|del(ete)?|(list)?)openaikey)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

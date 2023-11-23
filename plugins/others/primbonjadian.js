@@ -25,4 +25,5 @@ handler.command = /^(jadian)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

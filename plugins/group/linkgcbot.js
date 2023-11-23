@@ -8,4 +8,5 @@ handler.menugroup = ['linkgcbot']
 handler.tagsgroup = ['group']
 handler.command = /^((link)?(gc|gro?up)bot)$/i
 
+handler.registered = true
 export default handler

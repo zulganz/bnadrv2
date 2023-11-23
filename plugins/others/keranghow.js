@@ -14,4 +14,5 @@ handler.command = /^((how|cek)(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress
 
 handler.group = true
 
+handler.registered = true
 export default handler

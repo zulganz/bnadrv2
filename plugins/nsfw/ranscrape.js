@@ -24,4 +24,5 @@ handler.premium = true
 handler.limit = true
 handler.nsfw = true
 
+handler.registered = true
 export default handler

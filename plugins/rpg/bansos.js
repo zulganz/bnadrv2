@@ -38,4 +38,5 @@ handler.tags = ['rpg']
 handler.help = ['bansos']
 handler.command = /^(bansos|korupsi)$/i
 
+handler.registered = true
 export default handler

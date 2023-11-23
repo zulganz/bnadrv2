@@ -14,4 +14,5 @@ handler.command = /^((del(ete)?|hapus)vote)$/i
 handler.group = true
 handler.admin = true
 
+handler.registered = true
 export default handler 

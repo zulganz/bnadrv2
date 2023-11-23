@@ -43,4 +43,5 @@ handler.tags = ['rpg']
 handler.help = ['profile']
 handler.command = /^(profile?)$/i
 
+handler.registered = true
 export default handler

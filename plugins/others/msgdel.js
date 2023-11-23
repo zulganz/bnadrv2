@@ -14,4 +14,5 @@ handler.command = /^(delmsg|msgdel)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

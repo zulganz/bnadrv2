@@ -33,4 +33,5 @@ handler.command = /^(((t|n)ambah|add|plus|min|kurang)(prem(ium)?dura(si|tion)|du
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

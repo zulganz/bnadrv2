@@ -25,6 +25,7 @@ handler.command = /^((short|cuttly|owovc|shrtco|tinycc|tinyurl|ulvis)(link)?)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler
         
 async function shortlink(apikey, command, out, custom) {

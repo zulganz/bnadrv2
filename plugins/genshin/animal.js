@@ -29,6 +29,7 @@ handler.command = /^((gi|genshin)animals?)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler
 
 const more = String.fromCharCode(8206)

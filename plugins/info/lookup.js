@@ -25,4 +25,5 @@ handler.command = /^(dns|lookup|dnslookup|hacktarget)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler

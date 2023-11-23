@@ -19,4 +19,5 @@ handler.command = /^(addr(eal)?owner)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

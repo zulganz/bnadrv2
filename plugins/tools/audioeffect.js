@@ -39,6 +39,7 @@ handler.help = ['bass','blown','deep','earrape','fast','fat','nightcore','revers
 handler.tags = ['tools']
 handler.command = /^(bass|blown|deep|earrape|fas?t|nightcore|reverse|robot|slow|smooth|tupai|squirrel|chipmunk)$/i
 
+handler.registered = true
 export default handler
 
 const getRandom = (ext) => {

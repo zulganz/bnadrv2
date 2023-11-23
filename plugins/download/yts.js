@@ -71,4 +71,5 @@ handler.menudownload = ['ytsearch <teks> / <url>']
 handler.tagsdownload = ['search']
 handler.command = /^((search)?yt(s(earch)?)|youtube)$/i
 
+handler.registered = true
 export default handler

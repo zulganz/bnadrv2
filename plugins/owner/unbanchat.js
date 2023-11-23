@@ -22,4 +22,5 @@ handler.command = /^(unbanchat)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

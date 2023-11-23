@@ -64,4 +64,5 @@ handler.command = /^(adventure|(ber)?petualang(ang)?|mulung)$/i
 
 handler.cooldown = cooldown
 
+handler.registered = true
 export default handler

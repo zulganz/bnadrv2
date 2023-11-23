@@ -492,4 +492,5 @@ handler.help = ['ww', 'werewolf'];
 handler.command = /^(ww|werewolf)$/i;
 handler.group = true
 
+handler.registered = true
 export default handler;

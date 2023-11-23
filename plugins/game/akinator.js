@@ -95,4 +95,5 @@ handler.command = /^(akinator)$/i
 handler.limit = true
 handler.game = true
 
+handler.registered = true
 export default handler

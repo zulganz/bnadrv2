@@ -37,4 +37,5 @@ handler.menugroup = ['fixmoney']
 handler.tagsgroup = ['group']
 handler.command = /^((fix|reset)money)$/i
 
+handler.registered = true
 export default handler

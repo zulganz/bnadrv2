@@ -637,6 +637,7 @@ handler.command = /^(dungeon)$/i
 handler.rowner = true
 handler.mods = false
 
+handler.registered = true
 export default handler
 /**
  * pickRandom from array

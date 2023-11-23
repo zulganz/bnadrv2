@@ -15,4 +15,5 @@ handler.help = ['style'].map(v => v + ' <text>')
 handler.tags = ['tools']
 handler.command = /^(style(text)?)$/i
 
+handler.registered = true
 export default handler

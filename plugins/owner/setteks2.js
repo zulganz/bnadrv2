@@ -13,4 +13,5 @@ handler.command = /^(setteksjadibot)$/i
 
 handler.mods = true
 
+handler.registered = true
 export default handler

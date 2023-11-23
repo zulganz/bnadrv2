@@ -516,4 +516,5 @@ handler.command = /^(buy|beli|shop|sell|jual)$/i
 
 handler.disabled = false
 
+handler.registered = true
 export default handler

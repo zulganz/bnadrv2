@@ -69,4 +69,5 @@ handler.help = ['menugroup']
 handler.tags = ['submenu']
 handler.command = /^(gro?upm(enu)?|m(enu)?gro?up)$/i
 
+handler.registered = true
 export default handler

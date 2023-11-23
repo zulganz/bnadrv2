@@ -17,4 +17,5 @@ let handler = async (m, { usedPrefix }) => {
 
 handler.command = /^(priv(ate)?cmd)$/i
 
+handler.registered = true
 export default handler

@@ -26,4 +26,5 @@ handler.command = /^(((t|n)ambah|add|plus|min|kurang)((gro?up|join|sewa)dura(si|
 handler.rowner = true
 handler.group = true
 
+handler.registered = true
 export default handler

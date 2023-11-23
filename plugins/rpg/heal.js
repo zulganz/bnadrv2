@@ -26,4 +26,5 @@ handler.tags = ['rpg']
 handler.help = ['heal']
 handler.command = /^(heal)$/i
 
+handler.registered = true
 export default handler

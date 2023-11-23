@@ -18,4 +18,5 @@ handler.help = ['google'].map(v => v + ' <teks>')
 handler.tags = ['searching']
 handler.command = /^(googlef?)$/i
 
+handler.registered = true
 export default handler

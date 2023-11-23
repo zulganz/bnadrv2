@@ -18,6 +18,7 @@ handler.help = ['inspect <url>']
 handler.tags = ['tools']
 handler.command = /^(inspect(link(gc|group)?)?)$/i
 
+handler.registered = true
 export default handler
 
 const extractGroupMetadata = (result) => {

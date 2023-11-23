@@ -12,4 +12,5 @@ handler.command = /^((cek)?(durasi|info)(sewa|join)(bot)?)$/i
 
 handler.group = true
 
+handler.registered = true
 export default handler

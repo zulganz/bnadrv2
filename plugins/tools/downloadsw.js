@@ -8,4 +8,5 @@ handler.help = ['downloadsw']
 handler.tags = ['tools']
 handler.command = /^((sw|status)(dl|download)|(dl|download)(sw|status))$/i
 
+handler.registered = true
 export default handler

@@ -23,4 +23,5 @@ handler.command = /^(cleandb(list)?)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

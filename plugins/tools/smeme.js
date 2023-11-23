@@ -28,4 +28,5 @@ handler.help = ['smeme <teks1>|<teks2>']
 handler.tags = ['tools']
 handler.command = /^(s(tic?ker)?meme)$/i
 
+handler.registered = true
 export default handler

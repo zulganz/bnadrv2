@@ -25,4 +25,5 @@ handler.tags = ['rpg']
 handler.help = ['limit']
 handler.command = /^(limit)$/i
 
+handler.registered = true
 export default handler

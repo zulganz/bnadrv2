@@ -90,6 +90,7 @@ handler.command = /^(judi|bet)$/i
 
 handler.group = true
 
+handler.registered = true
 export default handler
 
 /**

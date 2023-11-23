@@ -45,4 +45,5 @@ handler.menugroup = ['listbanned']
 handler.tagsgroup = ['group']
 handler.command = /^((list|daftar)(ban(ned)?|bloc?k|mute))$/i
 
+handler.registered = true
 export default handler

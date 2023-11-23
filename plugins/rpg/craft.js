@@ -111,4 +111,5 @@ handler.command = /^(craft(ing)?)$/i
 
 handler.premium = true
 
+handler.registered = true
 export default handler

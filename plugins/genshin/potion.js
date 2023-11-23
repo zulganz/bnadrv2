@@ -27,4 +27,5 @@ handler.command = /^(gipotions?)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler

@@ -15,4 +15,5 @@ handler.menuowner = ['cmdlist']
 handler.tagsowner = ['owner']
 handler.command = /^(listcmd|cmdlist)$/i
 
+handler.registered = true
 export default handler

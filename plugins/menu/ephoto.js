@@ -69,4 +69,5 @@ handler.help = ['menuephoto']
 handler.tags = ['submenu']
 handler.command = /^(ephotom(enu)?|m(enu)?ephoto)$/i
 
+handler.registered = true
 export default handler

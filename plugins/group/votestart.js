@@ -43,4 +43,5 @@ handler.command = /^((start|mulai)?vote)$/i
 handler.group = true
 handler.admin = true
 
+handler.registered = true
 export default handler

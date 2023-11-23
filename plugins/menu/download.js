@@ -69,4 +69,5 @@ handler.help = ['menudownload']
 handler.tags = ['submenu']
 handler.command = /^(downloadm(enu)?|m(enu)?download)$/i
 
+handler.registered = true
 export default handler

@@ -192,4 +192,5 @@ handler.command = /^((cook(ing)?)|((me)?masak))$/i
 handler.cooldown = cooldown
 handler.premium = true
 
+handler.registered = true
 export default handler

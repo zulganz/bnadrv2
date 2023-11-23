@@ -24,6 +24,7 @@ handler.command = /^((pp)?couple|ppcp)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler
 
 const pepe = [

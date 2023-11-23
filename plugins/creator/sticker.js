@@ -35,4 +35,5 @@ handler.help = ['', '30fps', '45fps', '60fps'].map(v => 'sticker' + v)
 handler.tags = ['creator']
 handler.command = /^(s(tic?ker)?(gif)?(30|45|60)?(fps)?)$/i
 
+handler.registered = true
 export default handler

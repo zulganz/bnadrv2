@@ -12,4 +12,5 @@ handler.command = /^(setauthor(name)?)$/i
 
 handler.rowner = true
 
+handler.registered = true
 export default handler

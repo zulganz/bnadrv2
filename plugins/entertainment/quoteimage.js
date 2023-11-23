@@ -20,4 +20,5 @@ handler.command = /^(quotes?image)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

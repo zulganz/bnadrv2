@@ -24,4 +24,5 @@ handler.command = /^(gp|getplugin|pg|pluginget)$/i
 
 handler.mods = true
 
+handler.registered = true
 export default handler

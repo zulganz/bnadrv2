@@ -13,4 +13,5 @@ handler.command = /^(ss(web)?(full)?)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

@@ -16,4 +16,5 @@ handler.menugroup = ['getprofile @tag']
 handler.tagsgroup = ['group']
 handler.command = /^(get(pp|profile)(user)?)$/i
 
+handler.registered = true
 export default handler

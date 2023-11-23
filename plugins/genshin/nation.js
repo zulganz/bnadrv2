@@ -22,4 +22,5 @@ handler.command = /^((gi|genshin)nations?)$/i
 
 handler.limit = true
 
+handler.registered = true
 export default handler

@@ -122,4 +122,5 @@ handler.command = /^(build(ing)?)$/i
 
 handler.premium = true
 
+handler.registered = true
 export default handler

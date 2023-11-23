@@ -55,4 +55,5 @@ handler.command = /^(info(gro?up|gc)|(gro?up|gc)info)$/i
 
 handler.group = true
 
+handler.registered = true
 export default handler

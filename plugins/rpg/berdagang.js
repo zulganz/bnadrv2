@@ -56,4 +56,5 @@ handler.cooldown = cooldown
 handler.group = true
 handler.limit = true
 
+handler.registered = true
 export default handler

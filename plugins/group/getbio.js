@@ -29,4 +29,5 @@ handler.command = /^(get(about|bio))$/i
 
 handler.group = true
 
+handler.registered = true
 export default handler

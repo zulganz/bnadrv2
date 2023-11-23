@@ -22,4 +22,5 @@ handler.command = /^(cash)$/i
 
 handler.owner = true
 
+handler.registered = true
 export default handler

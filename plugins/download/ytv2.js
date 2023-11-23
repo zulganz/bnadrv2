@@ -47,4 +47,5 @@ handler.command = /^(yt(v(ideo)?|mp4)(360|480|720|1080)p?)$/i
 handler.premium = true
 handler.limit = true
 
+handler.registered = true
 export default handler

@@ -49,4 +49,5 @@ handler.tags = ['rpg']
 handler.menu = ['levelup']
 handler.command = /^(level(up)?)$/i
 
+handler.registered = true
 export default handler

@@ -38,4 +38,5 @@ handler.command = /^(weekly)$/i
 
 handler.cooldown = cooldown
 
+handler.registered = true
 export default handler
