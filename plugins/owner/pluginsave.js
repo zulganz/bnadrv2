@@ -23,5 +23,5 @@ handler.command = /^((save|sf)(plugins?)?|pluginsave)$/i
 
 handler.mods = true
 
-handler.registered = true
+handler.register = true
 export default handler

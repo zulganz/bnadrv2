@@ -256,5 +256,5 @@ handler.menugroup = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tagsgroup = ['group']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 
-handler.registered = true
+handler.register = true
 export default handler

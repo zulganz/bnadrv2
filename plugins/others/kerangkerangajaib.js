@@ -16,5 +16,5 @@ handler.tagsfun = ['kerang']
 
 handler.command = /^((kulit)?kerang(ajaib)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

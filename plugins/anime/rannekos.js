@@ -22,5 +22,5 @@ handler.command = /^(baka|bored|facepalm|feed|handshake|husbando|kitsune|laugh|l
 handler.premium = true
 handler.limit = true
 
-handler.registered = true
+handler.register = true
 export default handler

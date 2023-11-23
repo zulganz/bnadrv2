@@ -27,5 +27,5 @@ handler.before = async function (m) {
 	return !0
 }
 
-handler.registered = true
+handler.register = true
 export default handler

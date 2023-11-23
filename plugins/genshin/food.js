@@ -27,7 +27,7 @@ handler.command = /^((gi|genshin)foods?)$/i
 
 handler.limit = true
 
-handler.registered = true
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

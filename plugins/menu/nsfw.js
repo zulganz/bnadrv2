@@ -72,5 +72,5 @@ handler.help = ['menunsfw']
 handler.tags = ['submenu']
 handler.command = /^(nsfwm(enu)?|m(enu)?nsfw)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

@@ -12,5 +12,5 @@ handler.command = /^(truth|dare)$/i
 handler.limit = true
 handler.group = true
 
-handler.registered = true
+handler.register = true
 export default handler

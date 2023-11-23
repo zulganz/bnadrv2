@@ -22,5 +22,5 @@ handler.tags = ['rpg']
 handler.help = ['nabung <jumlah>']
 handler.command = /^((t|n)abung(all)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

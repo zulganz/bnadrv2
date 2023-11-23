@@ -44,5 +44,5 @@ handler.menugroup = ['ping']
 handler.tagsgroup = ['group']
 handler.command = /^(p(i|o)ng|tes|test|info|ingfo|runtime)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

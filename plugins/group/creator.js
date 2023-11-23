@@ -10,5 +10,5 @@ handler.menugroup = ['owner']
 handler.tagsgroup = ['group']
 handler.command = /^(owner|creator)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

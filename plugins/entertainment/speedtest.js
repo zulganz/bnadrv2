@@ -20,5 +20,5 @@ handler.help = ['speedtest']
 handler.tags = ['entertainment']
 handler.command = /^(speed(test?)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

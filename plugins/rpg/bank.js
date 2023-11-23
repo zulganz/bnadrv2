@@ -36,5 +36,5 @@ handler.tags = ['rpg']
 handler.help = ['bank <opts>']
 handler.command = /^(bank|atm)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

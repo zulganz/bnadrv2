@@ -16,5 +16,5 @@ handler.help = ['yandexreverse']
 handler.tags = ['searching']
 handler.command = /^(yandexreverse)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

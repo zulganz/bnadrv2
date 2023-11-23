@@ -16,5 +16,5 @@ handler.help = ['googlereverse']
 handler.tags = ['searching']
 handler.command = /^(g(oogle)?reverse)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

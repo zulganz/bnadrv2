@@ -27,5 +27,5 @@ handler.command = /^((bc|broadcast)(c|chats?|pc|private))$/i
 
 handler.owner = true
 
-handler.registered = true
+handler.register = true
 export default handler

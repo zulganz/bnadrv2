@@ -32,5 +32,5 @@ handler.menugroup = ['groups', 'grouplist']
 handler.tagsgroup = ['group']
 handler.command = /^((gro?ups?|gc|sewa(bot)?)list|list(gro?ups?|gc|sewa(bot)?))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

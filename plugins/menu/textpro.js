@@ -70,5 +70,5 @@ handler.help = ['menutextpro']
 handler.tags = ['submenu']
 handler.command = /^(textprom(enu)?|m(enu)?textpro)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

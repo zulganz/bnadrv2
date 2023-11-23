@@ -16,6 +16,6 @@ handler.command = /^(del(ete)?r(eal)?owner)$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler
 

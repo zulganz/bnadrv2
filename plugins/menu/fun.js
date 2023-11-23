@@ -72,5 +72,5 @@ handler.help = ['*menufun*']
 handler.tags = ['submenu']
 handler.command = /^((fun|rpg|games?)m(enu)?|m(enu)?(fun|rpg|games?))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

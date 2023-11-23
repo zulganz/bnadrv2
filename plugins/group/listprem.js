@@ -25,5 +25,5 @@ handler.menugroup = ['listprem']
 handler.tagsgroup = ['group']
 handler.command = /^(listprem|premlist)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

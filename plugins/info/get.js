@@ -22,5 +22,5 @@ handler.help = ['fetch <url>']
 handler.tags = ['information']
 handler.command = /^(fetch|get)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

@@ -29,5 +29,5 @@ handler.help = ['toimg']
 handler.tags = ['tools']
 handler.command = /^(toim(g|age))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

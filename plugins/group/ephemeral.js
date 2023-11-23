@@ -45,5 +45,5 @@ handler.command = /^((set)?ep(hem(eral)?)?|psgc|gcps|(ps|pesan)?sementara)$/i
 handler.botAdmin = true
 handler.group = true
 
-handler.registered = true
+handler.register = true
 export default handler

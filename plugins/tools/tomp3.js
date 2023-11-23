@@ -14,5 +14,5 @@ handler.help = ['toaudio','tomp3','tovn'].map(v => v+' (reply)')
 handler.tags = ['tools']
 handler.command = /^(to(vn|a(udio)?|mp3))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

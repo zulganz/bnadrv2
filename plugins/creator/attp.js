@@ -17,7 +17,7 @@ handler.tags = ['creator']
 
 handler.command = /^attp$/i
 
-handler.registered = true
+handler.register = true
 export default handler
 
 var attp = async (text) => {

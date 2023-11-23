@@ -10,5 +10,5 @@ handler.menugroup = ['donasi']
 handler.tagsgroup = ['group']
 handler.command = /^(dona(te|si))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

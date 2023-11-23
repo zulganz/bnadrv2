@@ -29,7 +29,7 @@ handler.command = /^(join)$/i
 
 handler.owner = true
 
-handler.registered = true
+handler.register = true
 export default handler
 
 const isNumber = (x) => (x = parseInt(x), typeof x === 'number' && !isNaN(x))

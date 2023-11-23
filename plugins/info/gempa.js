@@ -39,5 +39,5 @@ handler.command = /^(infogempa)$/i
 handler.premium = true
 handler.limit = true
 
-handler.registered = true
+handler.register = true
 export default handler

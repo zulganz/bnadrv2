@@ -19,5 +19,5 @@ handler.tags = ['rpg']
 handler.help = ['tarik <jumlah>']
 handler.command = /^((t|n)arik(all)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

@@ -75,5 +75,5 @@ handler.help = ['berburu']
 handler.cooldown = cooldown
 handler.premium = true
 
-handler.registered = true
+handler.register = true
 export default handler

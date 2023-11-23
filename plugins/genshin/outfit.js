@@ -28,7 +28,7 @@ handler.command = /^((gi|genshin)(costumes?|outfits?))$/i
 
 handler.limit = true
 
-handler.registered = true
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

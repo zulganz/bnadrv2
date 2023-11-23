@@ -38,7 +38,7 @@ handler.command = /^(set(botpp|ppbot)(2|panjang|full?)?)$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler
 
 async function pepe(media) {

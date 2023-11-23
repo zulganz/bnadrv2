@@ -31,5 +31,5 @@ handler.tags = ['rpg']
 handler.help = ['kolam']
 handler.command = /^(kolam)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

@@ -18,5 +18,5 @@ handler.help = ['totalfitur']
 handler.tags = ['tools']
 handler.command = /^(ft|total(ft?|fitur|cmd|command))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

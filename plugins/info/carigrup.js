@@ -21,5 +21,5 @@ handler.command = /^((cari|find)(link)?(gc|gro?up))$/i
 handler.premium = true
 handler.limit = true
 
-handler.registered = true
+handler.register = true
 export default handler

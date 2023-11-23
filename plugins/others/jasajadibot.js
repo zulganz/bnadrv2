@@ -81,5 +81,5 @@ handler.menugroup = ['jadibot']
 handler.tagsgroup = ['group']
 handler.command = /^(jadibot)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

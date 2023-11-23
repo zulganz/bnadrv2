@@ -89,5 +89,5 @@ function pickRandom(list) {
 
 handler.modes = modes
 
-handler.registered = true
+handler.register = true
 export default handler

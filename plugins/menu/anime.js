@@ -71,5 +71,5 @@ handler.help = ['*menuanime*']
 handler.tags = ['submenu']
 handler.command = /^(animem(enu)?|m(enu)?anime)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

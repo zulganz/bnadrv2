@@ -134,7 +134,7 @@ handler.tags = ['rpg']
 handler.help = ['inventory', 'inv']
 handler.command = /^(inv(entory)?|bal(ance)?|money|e?xp)$/i
 
-handler.registered = true
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

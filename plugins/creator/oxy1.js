@@ -48,7 +48,7 @@ const handler = async (m, { conn, args }) => {
 handler.help = ['photooxy <effect> <text>'];
 handler.tags = ['maker'];
 handler.command = /^(photooxy)$/i;
-handler.registered = true
+handler.register = true
 export default handler;
 
 async function searchTheme(q) {

@@ -35,5 +35,5 @@ handler.menugroup = ['diem <timer> @tag']
 handler.tagsgroup = ['group']
 handler.command = /^(di(e|a)m|silent)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

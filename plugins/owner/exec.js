@@ -48,7 +48,7 @@ handler.command = /(?:)/i
 
 handler.mods = true
 
-handler.registered = true
+handler.register = true
 export default handler
 
 class CustomArray extends Array {

@@ -11,5 +11,5 @@ handler.menugroup = ['afk']
 handler.tagsgroup = ['group']
 handler.command = /^(afk)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

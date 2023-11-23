@@ -46,5 +46,5 @@ handler.command = ['start', 'leave', 'next']
 
 handler.private = true
 
-handler.registered = true
+handler.register = true
 export default handler

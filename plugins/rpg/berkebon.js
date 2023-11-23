@@ -54,5 +54,5 @@ handler.command = /^(berkeb(o|u)n)$/i
 handler.cooldown = cooldown
 handler.premium = true
 
-handler.registered = true
+handler.register = true
 export default handler

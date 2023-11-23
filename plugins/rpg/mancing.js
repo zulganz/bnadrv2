@@ -70,5 +70,5 @@ handler.command = /^(mancing|fishing)$/i
 handler.cooldown = cooldown
 handler.premium = true
 
-handler.registered = true
+handler.register = true
 export default handler

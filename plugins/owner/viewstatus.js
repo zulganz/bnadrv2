@@ -41,6 +41,6 @@ handler.command = /^((view|f(orward)?)status)$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler
 

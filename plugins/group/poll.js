@@ -14,5 +14,5 @@ handler.command = /^((create)?poll(ing)?)$/i
 
 handler.group = true
 
-handler.registered = true
+handler.register = true
 export default handler

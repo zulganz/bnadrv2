@@ -71,5 +71,5 @@ handler.help = ['menugenshin']
 handler.tags = ['submenu']
 handler.command = /^(genshinm(enu)?|m(enu)?genshin)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

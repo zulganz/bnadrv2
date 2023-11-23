@@ -197,5 +197,5 @@ handler.command = /^(open|buka|gacha)$/i
 
 handler.premium = true
 
-handler.registered = true
+handler.register = true
 export default handler

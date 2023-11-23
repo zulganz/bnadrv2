@@ -10,5 +10,5 @@ handler.menugroup = ['topup']
 handler.tagsgroup = ['group']
 handler.command = /^(topup)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

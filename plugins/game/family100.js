@@ -36,5 +36,5 @@ handler.command = /^(family100)$/i
 handler.premium = true
 handler.game = true
 
-handler.registered = true
+handler.register = true
 export default handler

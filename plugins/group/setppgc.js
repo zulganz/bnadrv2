@@ -39,7 +39,7 @@ handler.admin = true
 handler.botAdmin = true
 handler.group = true
 
-handler.registered = true
+handler.register = true
 export default handler
 
 async function pepe(media) {

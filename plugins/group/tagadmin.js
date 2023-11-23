@@ -33,5 +33,5 @@ handler.command = /^((tag|list)admins?)$/i
 
 handler.group = true
 
-handler.registered = true
+handler.register = true
 export default handler

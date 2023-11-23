@@ -20,5 +20,5 @@ handler.help = ['cekapilol']
 handler.tags = ['information']
 handler.command = /^(ch?ec?kapi(key)?lol(human)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

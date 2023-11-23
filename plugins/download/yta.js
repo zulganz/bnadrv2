@@ -44,6 +44,6 @@ handler.command = /^(yt(a(udio)?|mp3))$/i
 handler.premium = true
 handler.limit = true
 
-handler.registered = true
+handler.register = true
 export default handler
 

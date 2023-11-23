@@ -15,5 +15,5 @@ handler.command = /^(setteks(donasi|sewa(bot)?|topup))$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler

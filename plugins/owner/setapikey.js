@@ -35,5 +35,5 @@ handler.command = /^((add|cek|edit|del(ete)?)(api(key)?))$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler

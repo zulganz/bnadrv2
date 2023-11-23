@@ -77,5 +77,5 @@ handler.help = ['nulis','nuliskanankiri'].map(v => v + ' <teks>')
 handler.tags = ['tools']
 handler.command = /^(nulis(kanan(kiri)?)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

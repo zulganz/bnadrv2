@@ -21,5 +21,5 @@ handler.help = ['getexif']
 handler.tags = ['tools']
 handler.command = /^(getexif)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

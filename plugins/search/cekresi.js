@@ -26,5 +26,5 @@ handler.help = ['cekresi <no_resi>']
 handler.tags = ['searching']
 handler.command = /^(cekresi)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

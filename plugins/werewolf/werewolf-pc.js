@@ -58,5 +58,5 @@ handler.help = ['wwpc [skill] [nomor]']
 handler.tags = ['werewolf']
 handler.command = ['wwpc'];
 
-handler.registered = true
+handler.register = true
 export default handler;

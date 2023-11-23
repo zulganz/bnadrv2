@@ -101,5 +101,5 @@ handler.command = /^((m(enu)?|help)(list)?|\?)$/i
 
 handler.exp = 3
 
-handler.registered = true
+handler.register = true
 export default handler

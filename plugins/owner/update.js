@@ -20,5 +20,5 @@ handler.botAdmin = false
 handler.fail = null
 handler.exp = 0
 
-handler.registered = true
+handler.register = true
 export default handler

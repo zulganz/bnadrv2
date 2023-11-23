@@ -17,5 +17,5 @@ handler.command = /^(banchat)$/i
 
 handler.owner = true
 
-handler.registered = true
+handler.register = true
 export default handler

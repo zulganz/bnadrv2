@@ -17,5 +17,5 @@ handler.help = ['readviewonce']
 handler.tags = ['tools']
 handler.command = /^((read)?viewonce|rvo)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

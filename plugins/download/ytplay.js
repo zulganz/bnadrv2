@@ -91,5 +91,5 @@ handler.menudownload = ['ytplay <teks> / <url>']
 handler.tagsdownload = ['search']
 handler.command = /^(play|(play)?yt(play|dl)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

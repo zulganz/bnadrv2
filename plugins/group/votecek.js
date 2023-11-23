@@ -36,5 +36,5 @@ handler.command = /^(cekvote)$/i
 
 handler.group = true
 
-handler.registered = true
+handler.register = true
 export default handler 

@@ -52,5 +52,5 @@ handler.menugroup = ['premium','sewabot']
 handler.tagsgroup = ['group']
 handler.command = /^(sewa(bot)?|prem(ium)?)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

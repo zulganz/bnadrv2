@@ -95,5 +95,5 @@ handler.menugroup = ['listspam']
 handler.tagsgroup = ['group']
 handler.command = /^(listspam)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

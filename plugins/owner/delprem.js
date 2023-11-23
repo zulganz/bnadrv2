@@ -23,5 +23,5 @@ handler.command = /^(del(ete)?prem(ium)?)$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler

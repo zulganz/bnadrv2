@@ -28,7 +28,7 @@ handler.help = ['tts <lang> <teks>']
 handler.tags = ['tools']
 handler.command = /^(g?tts)$/i
 
-handler.registered = true
+handler.register = true
 export default handler
 
 function tts(text, lang = 'id') {

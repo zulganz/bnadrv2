@@ -19,5 +19,5 @@ handler.tags = ['rpg']
 handler.help = ['buah']
 handler.command = /^((list)?(buah|fruits?))$/i
 
-handler.registered = true
+handler.register = true
 export default handler

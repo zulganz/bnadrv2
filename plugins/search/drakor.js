@@ -23,5 +23,5 @@ handler.help = ['drakor ongoing','drakor <query>']
 handler.tags = ['searching']
 handler.command = /^(drakor)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

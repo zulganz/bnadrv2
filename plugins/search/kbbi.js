@@ -28,5 +28,5 @@ handler.help = ['kbbi <text>']
 handler.tags = ['searching']
 handler.command = /^(kbbi)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

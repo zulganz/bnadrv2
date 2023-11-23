@@ -12,5 +12,5 @@ handler.command = /^(setlink(gro?up|gc)(bot)?)$/i
 
 handler.rowner = true
 
-handler.registered = true
+handler.register = true
 export default handler

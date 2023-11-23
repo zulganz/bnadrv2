@@ -24,5 +24,5 @@ handler.help = ['database']
 handler.tags = ['tools']
 handler.command = /^((view|lihat)?database)$/i
 
-handler.registered = true
+handler.register = true
 export default handler

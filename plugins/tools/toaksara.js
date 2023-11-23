@@ -15,5 +15,5 @@ handler.help = ['toaksara <teks>']
 handler.tags = ['tools']
 handler.command = /^((latin)?toaksara)$/i
 
-handler.registered = true
+handler.register = true
 export default handler
