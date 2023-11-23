@@ -22,14 +22,14 @@ let handler = async (m, {
     if (user.registered === true) throw `[💬] Kamu sudah terdaftar di database kami`;
     const umurRandom = Math.floor(Math.random() * 100) + 1;
     const formatSalah = `⚠️ Format salah\n\n✳️ Penggunaan perintah : *${usedPrefix + command} nama.umur*\n📌Contoh : *${usedPrefix + command}* ${m.sender.split('@')[0]}.${umurRandom}`;
-    if (!Reg.test(text)) throw formatSalah;
+    if (!Reg.test(text)) throw m.reply(formatSalah);
     let [_, name, splitter, age] = text.match(Reg);
-    if (!name) throw "Nama tidak boleh kosong (Alphanumeric)";
-    if (!age) throw "Umur tidak boleh kosong (Angka)";
+    if (!name) throw m.reply("Nama tidak boleh kosong (Alphanumeric)");
+    if (!age) throw m.reply("Umur tidak boleh kosong (Angka)");
     age = parseInt(age);
-    if (age > 30) throw "*Gak boleh!*,\nTua amat dah 🗿";
-    if (age < 5) throw "*Gak boleh!*,\nBanyak pedo 🗿";
-    if (user.name && user.name.trim() === name.trim()) throw "Nama sudah dipakai";
+    if (age > 30) throw m.reply("*Gak boleh!*,\nTua amat dah 🗿");
+    if (age < 5) throw m.reply("*Gak boleh!*,\nBanyak pedo 🗿");
+    if (user.name && user.name.trim() === name.trim()) throw m.reply("Nama sudah dipakai");
     try {
         let sn = createHash("md5").update(m.sender).digest("hex");
         let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender;
