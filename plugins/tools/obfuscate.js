@@ -1,8 +1,7 @@
 import fs from 'fs';
 import JavaScriptObfuscator from 'javascript-obfuscator';
-import { conn } from '../../lib/connection';
 
-const handler = async (m, { args, command }) => {
+const handler = async (m, { args, command, conn }) => {
     try {
         const q = m.quoted || m;
         const mime = (q.msg || q).mimetype || '';
