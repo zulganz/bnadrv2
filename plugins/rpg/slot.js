@@ -1,7 +1,6 @@
 
 import fetch from 'node-fetch'
 import fs from "fs"
-import { ranNumb } from '../../lib/func.js'
 import db from '../../lib/database.js'
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
@@ -15,15 +14,15 @@ let users = db.data.users[m.sender]
         if (args.length < 1) return m.reply(`Gunakan format *${usedPrefix}${command} [jumlah]*
 contoh *${usedPrefix}${command} 10*`)
         let count = args[0]
-        let _spin1 = ranNumb(['1', '5']) 
-        let _spin2 = ranNumb(['1', '5']) 
-        let _spin3 = ranNumb(['1', '5']) 
-        let _spin4 = ranNumb(['1', '5'])
-        let _spin5 = ranNumb(['1', '5']) 
-        let _spin6 = ranNumb(['1', '5']) 
-        let _spin7 = ranNumb(['1', '5']) 
-        let _spin8 = ranNumb(['1', '5']) 
-        let _spin9 = ranNumb(['1', '5']) 
+        let _spin1 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin2 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin3 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin4 = pickRandom(['1', '2', '3', '4', '5']) 
+        let _spin5 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin6 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin7 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin8 = pickRandom(['1', '2', '3', '4', '5'])  
+        let _spin9 = pickRandom(['1', '2', '3', '4', '5'])  
         let spin1 = (_spin1 * 1)
         let spin2 = (_spin2 * 1)
         let spin3 = (_spin3 * 1)
