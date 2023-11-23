@@ -17,7 +17,7 @@ const handler = async (m, { args, command, conn }) => {
             return m.reply('Input file size is too large. It must be below 3 MB.');
         }
 
-        const readjs = buffer.getData().toString('utf8')
+        const readjs = buffer.toString('utf8')
 
         const result = await Encrypt(readjs);
         //make a path to save the file to tmp
