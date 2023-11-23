@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 import fs from "fs"
 import { ranNumb } from '../../lib/func.js'
-import db from '../../lib/database.js'
+//import db from '../../lib/database.js'
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
 //let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
