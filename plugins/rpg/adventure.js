@@ -16,7 +16,7 @@ let handler = async (m, { usedPrefix, command }) => {
 
 	user.adventurecount += 1
 
-	const health = ranNumb(3, 6)
+	const health = ranNumb(3, user.health)
 	const money = ranNumb(1000, 3000)
 	const exp = ranNumb(500, 1000)
 	const trash = ranNumb(10, 50)

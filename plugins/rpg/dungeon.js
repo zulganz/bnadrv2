@@ -111,7 +111,7 @@ Sedang berperang di dungeon...
           for (let i = 0; i < player.length; i++) {
             let p = player[i]
             setTimeout(() => {
-              users[p].healt -= healt * 1
+              users[p].health -= healt * 1
               users[p].sworddurability -= sword * 1
               users[p].money += money * 1
               users[p].exp += exp * 1
@@ -130,7 +130,7 @@ Sedang berperang di dungeon...
               users[p].makananpet += makananPet * 1
               users[p].lastdungeon = new Date * 1
 
-              if ((users[p].healt * 1) < 1) users[p].healt = 0
+              if ((users[p].health * 1) < 1) users[p].health = 0
               if ((users[p].sworddurability * 1) < 1) {
                 users[p].sword -= 1
                 users[p].sworddurability = (users[p].sword * 1) * 50
@@ -212,10 +212,10 @@ Sedang berperang di dungeon...
           let _2 = users[p2]
           let _3 = users[p3]
           let _4 = users[p4]
-          let _H1 = (_1.healt * 1)
-          let _H2 = (_2.healt * 1)
-          let _H3 = (_3.healt * 1)
-          let _H4 = (_4.healt * 1)
+          let _H1 = (_1.health * 1)
+          let _H2 = (_2.health * 1)
+          let _H3 = (_3.health * 1)
+          let _H4 = (_4.health * 1)
 
           // sd = SwordDurability :v
           let _sd1 = (_1.sworddurability * 1)
@@ -235,7 +235,7 @@ Sedang berperang di dungeon...
             //Buat nyimpen data sementara :v
             let HEALT = [], SDH = [], SDM1L = []
             for (let siapa in player) {
-              if ((users[siapa].healt * 1) < 1) HEALT.push(siapa)
+              if ((users[siapa].health * 1) < 1) HEALT.push(siapa)
               if ((users[siapa].sworddurability * 1) < 1 && (users[siapa].sword * 1) == 1) SDH.push(siapa)
               if ((users[siapa].sworddurability * 1) < 1 && (users[siapa].sword * 1) !== 1) SDM1L.push(siapa)
             }
