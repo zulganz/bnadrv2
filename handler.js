@@ -1131,15 +1131,20 @@ export async function handler(chatUpdate) {
 					console.error(e)
 					if (e) {
 						let text = format(e)
-						for (let key of Object.values(global.APIKeys))
-							text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
+						/*for (let key of Object.values(global.APIKeys))
+							text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')*/
 						if (e.name)
 								for (let [jid] of global.rowner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 									let data = (await this.onWhatsApp(jid))[0] || {}
 									if (data.exists)
 										m.reply(`*Plugin:* ${m.plugin}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
 								}
-						m.reply(text)
+						//m.reply(text)
+						conn.reply(global.rowner[0] + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
+        				contextInfo: {
+            			mentionedJid: [m.sender]
+        				}
+    				})
 					}
 				} finally {
 					// m.reply(util.format(_user))
