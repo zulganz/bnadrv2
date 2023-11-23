@@ -1,6 +1,6 @@
 import fs from 'fs';
 import JavaScriptObfuscator from 'javascript-obfuscator';
-import { ranNumbs } from '../../lib/func.js';
+import { ranNumb } from '../../lib/func.js';
 
 const handler = async (m, { args, command, conn }) => {
     try {
@@ -21,7 +21,7 @@ const handler = async (m, { args, command, conn }) => {
 
         const result = await Encrypt(readjs);
         //make a path to save the file to tmp
-        let ran = ranNumbs(1, 999999999999999)
+        let ran = ranNumb(1, 999999999999999)
         const output = fs.writeFileSync(`../../tmp/${ran}.js`, result);
         
         conn.sendFile(m.chat, output, `obfuscate.js`, m)
