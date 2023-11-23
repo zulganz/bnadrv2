@@ -2,10 +2,11 @@
 import fetch from 'node-fetch'
 import fs from "fs"
 import { ranNumb } from '../../lib/func.js'
+import db from '../../lib/database.js'
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-//let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
-let users = global.db.data.users[m.sender]
+let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
+let users = db.data.users[m.sender]
     conn.slots = conn.slots ? conn.slots : {}
     if (m.chat in conn.slots) return m.reply('Masih ada Yang Melakukan Slots Disini, Tunggu Sampai selesai!!')
     if (users.money < args[0]) return m.reply('Uang Kamu Tidak Cukup Untuk Bermain Slots!!')
