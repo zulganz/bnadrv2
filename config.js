@@ -27,6 +27,7 @@ global.APIKeys = { // APIKey Here
 	'https://api.lolhuman.xyz': pickRandom['IchanZX', 'GataDios']
 }
 
+global.logo = pickRandom(["https://minimalistic-wallpaper.demolab.com/?random", "https://picsum.photos/2560/1600"])
 global.multiplier = 69 // The higher, The harder levelup
 global.wait = "_🕚 Mohon tunggu, dalam proses!_"
 global.rpg = {
