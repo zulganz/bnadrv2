@@ -1140,11 +1140,7 @@ export async function handler(chatUpdate) {
 										m.reply(`*Plugin:* ${m.plugin}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
 								}
 						//m.reply(text)
-						conn.reply(global.rowner[0] + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
-        				contextInfo: {
-            			mentionedJid: [m.sender]
-        				}
-    				})
+						conn.sendMessage(global.rowner[0] + '@s.whatsapp.net', text, { quoted: m })
 					}
 				} finally {
 					// m.reply(util.format(_user))
