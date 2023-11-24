@@ -15,7 +15,7 @@ let handler = async (m, {
     const list = `
 ╭──『 ғᴏᴏᴅ 』
 │⬡ typing command↓
-│   ${usedPrefix + command } rendang 1 / ${usedPrefix + command } rendang
+│   ${usedPrefix + command } rendang 1\n${usedPrefix + command } rendang
 │
 │⬡ 🍖 *Ayambakar*
 │⬡ 🍗 *Ayamgoreng*
