@@ -29,8 +29,7 @@ global.APIKeys = { // APIKey Here
 
 global.logo = pickRandom(["https://minimalistic-wallpaper.demolab.com/?random", "https://picsum.photos/2560/1600"])
 global.multiplier = 69 // The higher, The harder levelup
-global.chance = {
-	percentageChance(values, chances) {
+global.chance = function (values, chances) {
 		var arrayShuffle = function(array) {
 			for ( var i = 0, length = array.length, swap = 0, temp = ''; i < length; i++ ) {
 			   swap        = Math.floor(Math.random() * (i + 1));
@@ -40,14 +39,13 @@ global.chance = {
 			}
 			return array;
 		 };
-		 
+
 		for ( var i = 0, pool = []; i < chances.length; i++ ) {
 		   for ( var i2 = 0; i2 < chances[i]; i2++ ) {
 			  pool.push(i);
 		   }
 		}
 		return values[arrayShuffle(pool)['0']];
-		}
 }
 global.wait = "_🕚 Mohon tunggu, dalam proses!_"
 global.rpg = {
