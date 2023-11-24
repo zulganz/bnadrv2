@@ -87,7 +87,9 @@ ${spins7}|${spins8}|${spins9}
     }
 }
 handler.help = ['slot', 'jackpot']
-handler.tags = ['rpg', 'game']
+handler.tags = ['rpg']
+handler.menufun = ['slot', 'jackpot']
+handler.tagsfun = ['rpg']
 handler.command = /^slots?|jac?kpot$/i
 
 handler.register = true

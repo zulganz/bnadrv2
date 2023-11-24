@@ -11,6 +11,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     m.reply(`_Pesan terkirim kepemilik bot, jika ${command.toLowerCase()} hanya main-main tidak akan ditanggapi._`)
 }
 handler.help = ['report'].map(v => v + ' <teks>')
-handler.tags = ['info']
+handler.tags = ['information']
 handler.command = /^(reports|masalah|report?|lapor|bug[gs]|bug)$/i
 export default handler

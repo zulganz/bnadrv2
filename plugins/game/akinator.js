@@ -88,8 +88,6 @@ let handler = async (m, {
 
 handler.menufun = ['akinator']
 handler.tagsfun = ['game']
-handler.tags = ['game']
-handler.help = ['akinator']
 handler.command = /^(akinator)$/i
 
 handler.limit = true
