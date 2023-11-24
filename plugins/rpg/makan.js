@@ -225,8 +225,8 @@ let handler = async (m, {
         } else conn.reply( m.chat, `Stamina kamu sudah penuh`, m)
         break
           default:
-       await //conn.sendMessage(m.chat, list, m)
-       conn.sendMessage(m.chat, {
+       await m.reply(list)
+       /*conn.sendMessage(m.chat, {
 				text: list,
 				footer: author,
 				title: '「 *E A T I N G* 」',
@@ -316,7 +316,7 @@ let handler = async (m, {
 			}
 					]
 				}]
-			})
+			})*/
             }
     } else if (/p/i.test(command)) {
       const count = args[2] && args[2].length > 0 ? Math.min(99999999, Math.max(parseInt(args[2]), 1)) : !args[2] || args.length < 4 ? 1 :Math.min(1, count)
