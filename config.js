@@ -69,6 +69,7 @@ global.rpg = {
 			exp: '✉️',
 			money: '💵',
 			potion: '🥤',
+			stamina: '🔋',
 			diamond: '💎',
 			common: '📦',
 			uncommon: '🎁',

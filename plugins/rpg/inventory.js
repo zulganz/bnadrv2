@@ -9,6 +9,7 @@ const inventory = {
 		health: true,
 		money: true,
 		exp: true,
+		stamina: true,
 	},
 	items: {
 		potion: true,
