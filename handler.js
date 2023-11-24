@@ -106,6 +106,8 @@ export async function handler(chatUpdate) {
 						user.iron = 0
 					if (!isNumber(user.sand))
 						user.sand = 0
+					if (!isNumber(user.stamina))
+						user.stamina = 0
 
 					if (!isNumber(user.emerald))
 						user.emerald = 0
@@ -406,6 +408,40 @@ export async function handler(chatUpdate) {
 						user.moluska = 0
 					if (!isNumber(user.squidprawm))
 						user.squidprawm = 0
+					if (!isNumber(user.ayamgoreng))
+						user.ayamgoreng = 0
+					if (!isNumber(user.ayambakar))
+						user.ayambakar = 0
+					if (!isNumber(user.oporayam))
+						user.oporayam = 0
+					if (!isNumber(user.gulaiayam))
+						user.gulaiayam = 0
+					if (!isNumber(user.babipanggang))
+						user.babipanggang = 0
+					if (!isNumber(user.soda))
+						user.soda = 0
+					if (!isNumber(user.vodka))
+						user.vodka = 0
+					if (!isNumber(user.ganja))
+						user.ganja = 0
+					if (!isNumber(user.bandage))
+						user.bandage = 0
+					if (!isNumber(user.roti))
+						user.roti = 0
+					if (!isNumber(user.ikanbakar))
+						user.ikanbakar = 0
+					if (!isNumber(user.lelebakar))
+						user.lelebakar = 0
+					if (!isNumber(user.nilabakar))
+						user.nilabakar = 0
+					if (!isNumber(user.bawalbakar))
+						user.bawalbakar = 0
+					if (!isNumber(user.udangbakar))
+						user.udangbakar = 0
+					if (!isNumber(user.pausbakar))
+						user.pausbakar = 0
+					if (!isNumber(user.kepitingbakar))
+						user.kepitingbakar = 0
 
 					if (!isNumber(user.rumahsakit))
 						user.rumahsakit = 0
@@ -651,7 +687,6 @@ export async function handler(chatUpdate) {
 					vodka: 0,
 					ganja: 0,
 					bandage: 0,
-					sushi: 0,
 					roti: 0,
 					ikanbakar: 0,
 					lelebakar: 0,
