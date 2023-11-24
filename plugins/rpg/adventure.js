@@ -66,6 +66,7 @@ let handler = async (m, { usedPrefix, command }) => {
 		user.diamond += diamond
 		txt += `\n\nSelamat anda mendapatkan *💎 diamond*`
 	} else if (RNGmomen == 'none') {
+		txt += `\n\nTidak ada bonus`
 	}
 	m.reply(txt)
 	user.lastadventure = new Date * 1
