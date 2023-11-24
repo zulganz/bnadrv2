@@ -52,6 +52,21 @@ let handler = async (m, { usedPrefix, command }) => {
 	if (user.adventurecount % 50  == 0) txt += `\n\nBonus adventure ${user.adventurecount} kali\n*👑 gold :* ${gold}`
 	if (user.adventurecount % 150 == 0) txt += `\n\nBonus adventure ${user.adventurecount} kali\n*💚 emerald :* ${emerald}`
 	if (user.adventurecount % 400 == 0) txt += `\n\nBonus adventure ${user.adventurecount} kali\n*💎 diamond :* ${diamond}`
+	let RNGmomen = chance(['none', 'common', 'gold', 'emerald', 'diamond'], [40, 30, 20, 9, 1])
+	if (RNGmomen == 'common') {
+		user.common += common
+		txt += `\n\nSelamat anda mendapatkan *📦 common*`
+	} else if (RNGmomen == 'gold') {
+		user.gold += gold
+		txt += `\n\nSelamat anda mendapatkan *👑 gold*`
+	} else if (RNGmomen == 'emerald') {
+		user.emerald += emerald
+		txt += `\n\nSelamat anda mendapatkan *💚 emerald*`
+	} else if (RNGmomen == 'diamond') {
+		user.diamond += diamond
+		txt += `\n\nSelamat anda mendapatkan *💎 diamond*`
+	} else if (RNGmomen == 'none') {
+	}
 	m.reply(txt)
 	user.lastadventure = new Date * 1
 }
