@@ -1,5 +1,5 @@
 import db from '../../lib/database.js'
-export async function all(m) {
+export async function before(m) {
     try {
     let user = db.data.users[m.sender]
 
@@ -9,6 +9,14 @@ export async function all(m) {
     }
     if (user.health < 0) {
         user.health = 0;
+    }
+
+    //stamina
+    if (user.stamina > 100) {
+        user.stamina = 100;
+    }
+    if (user.stamina < 0) {
+        user.stamina = 0;
     }
 
     //Sword                            
