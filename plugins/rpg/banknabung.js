@@ -9,9 +9,9 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 	if ((user.money - total) > 0) {
 		user.money -= total
 		user.atm += total
-		m.reply(`Sukses menabung sebesar ${total} Money 💹`)
+		m.reply(`Sukses menabung sebesar ${formatRupiah(total)} Money 💹`)
 	} else {
-		m.reply(`[❗] Uang anda tidak mencukupi untuk menabung ${total} money 💹`)
+		m.reply(`[❗] Uang anda tidak mencukupi untuk menabung ${formatRupiah(total)} money 💹`)
 	}
 }
 

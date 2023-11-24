@@ -9,8 +9,8 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 	if ((user.atm - total) >= 50000) {
 		user.atm -= total
 		user.money += total
-		m.reply(`Sukses menarik sebesar ${total} Money 💹`)
-	} else m.reply(`[❗] Rekening anda tidak mencukupi untuk menarik ${total} money 💹`)
+		m.reply(`Sukses menarik sebesar ${formatRupiah(total)} Money 💹`)
+	} else m.reply(`[❗] Rekening anda tidak mencukupi untuk menarik ${formatRupiah(total)} money 💹`)
 }
 
 handler.menufun = ['tarik <jumlah>']

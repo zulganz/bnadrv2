@@ -47,6 +47,16 @@ global.chance = function (values, chances) {
 		}
 		return values[arrayShuffle(pool)['0']];
 }
+global.formatRupiah = function(number) {
+	const formatter = new Intl.NumberFormat('id-ID', {
+	  style: 'currency',
+	  currency: 'IDR',
+	  minimumFractionDigits: 0,
+	});
+  
+	return formatter.format(number);
+  }
+  
 global.wait = "_🕚 Mohon tunggu, dalam proses!_"
 global.rpg = {
 	emoticon(string) {

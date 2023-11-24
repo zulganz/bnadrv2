@@ -42,7 +42,7 @@ let handler = async (m, { usedPrefix, command }) => {
 
 	let txt = `[ *Selesai ${command}* ]\n\n`
 	txt += `*❤️ health : -${health}*\nAnda membawa pulang :\n`
-	txt += `*💵 money :* ${money}\n`
+	txt += `*💵 money :* ${formatRupiah(money)}\n`
 	txt += `*✉️ exp :* ${exp}\n`
 	txt += `*🗑 trash :* ${trash}\n`
 	txt += `*🪨 rock :* ${rock}\n`

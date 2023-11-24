@@ -9,7 +9,7 @@ let handler = async (m, { conn, args }) => {
 		if (user.atm > 0) {
 			m.reply(`[!] Anda sudah membuat rekening.`)
 		} else if (user.money < 50000) {
-			m.reply(`[!] Minimal memiliki 💵 50000 untuk deposit.`)
+			m.reply(`[!] Minimal memiliki 💵 ${formatRupiah('50000')} untuk deposit.`)
 		} else {
 			user.money -= 50000
 			user.atm += 50000

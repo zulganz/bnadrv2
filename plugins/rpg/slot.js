@@ -76,7 +76,7 @@ ${spins1}|${spins2}|${spins3}
 ${spins4}|${spins5}|${spins6} <<==
 ${spins7}|${spins8}|${spins9}
 
-*${WinOrLose}* *${Hadiah}*
+*${WinOrLose}* *${formatRupiah(Hadiah)}*
 `, m)
     } catch (e) {
         console.log(e)
