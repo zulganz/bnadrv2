@@ -45,7 +45,7 @@ contoh *${usedPrefix}${command} 10*`)
         user.money -= Math.ceil(count * 1)
         for (let i = 0; i < 3; i++) {
             m.reply(m.chat, `
-            *🎰VIRTUAL SLOTS🎰*
+*🎰VIRTUAL SLOTS🎰*
             
 ${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}|${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}|${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}
 ${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}|${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}|${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])} <<==

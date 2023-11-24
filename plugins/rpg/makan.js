@@ -3,7 +3,8 @@ import db from '../../lib/database.js'
 let handler = async (m, {
 	command,
 	usedPrefix,
-	args
+	args,
+    conn
 }) => {
 	let user = db.data.users[m.sender]
 	let author = global.author
