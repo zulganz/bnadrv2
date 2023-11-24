@@ -35,7 +35,7 @@ Bonus: ${poin} XP
     ]
     await conn.sendMessage(m.chat, { audio: { url: json.lagu }, seconds: fsizedoc, ptt: true, mimetype: "audio/mpeg", fileName: "vn.mp3", waveform: [100,0,100,0,100,0,100] }, { quoted: m })
    } catch (e) {
-   throw eror
+   console.log(e)
       }
 }
 handler.help = ['tebaklagu']
