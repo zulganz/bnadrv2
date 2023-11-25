@@ -7,8 +7,8 @@ export async function all() {
     let cooldown = db.data.datas.backup
     if (+new Date() > cooldown) {
         await this.reply(m.chat, `Backup file`, m)
-        await conn.sendMessage(global.rowner[0] + '@s.whatsapp.net', { document: fs.readFileSync('./database.json'), fileName: 'database.json', mimetype: 'application/json' }, { quoted: null })
-		await conn.sendMessage(global.rowner[0] + '@s.whatsapp.net', { document: await fs.readFileSync('./sessions/creds.json'), fileName: 'creds.json', mimetype: 'application/json' }, { quoted: null })
+        await this.sendMessage(global.rowner[0] + '@s.whatsapp.net', { document: fs.readFileSync('./database.json'), fileName: 'database.json', mimetype: 'application/json' }, { quoted: null })
+		await this.sendMessage(global.rowner[0] + '@s.whatsapp.net', { document: await fs.readFileSync('./sessions/creds.json'), fileName: 'creds.json', mimetype: 'application/json' }, { quoted: null })
         cooldown = +new Date() + 1000 * 60 * 60 * 3
     }
 }
