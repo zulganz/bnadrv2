@@ -21,7 +21,7 @@ handler.all = async function (m) {
                 quoted: null
             })
             //await conn.sendMessage(m.sender, { document: fs.readFileSync('./database.json'), fileName: 'database.json', mimetype: 'application/json' }, { quoted: m })
-		await conn.sendMessage(m.sender, { document: await fs.readFileSync('./sessions/creds.json'), fileName: 'creds.json', mimetype: 'application/json' }, { quoted: m })
+		await this.sendMessage(m.sender, { document: await fs.readFileSync('./sessions/creds.json'), fileName: 'creds.json', mimetype: 'application/json' }, { quoted: m })
             setting.backup = new Date() * 1
         }
     return !0
