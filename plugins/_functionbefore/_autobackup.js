@@ -1,13 +1,27 @@
-/*import moment from 'moment-timezone'
 import fs from 'fs'
 import db from '../../lib/database.js'
-let cooldowns = '1000 * 60 * 60 * 3'
-export async function all(m) {
-    //let time = moment.tz('Asia/Jakarta').format('HH')
-    let cooldown = db.data.datas.backup
-    if (new Date() < cooldown) return !0
-        await this.reply(m.chat, `Backup file`, m)
-        await this.sendMessage(global.rowner[0] + '@s.whatsapp.net', { document: fs.readFileSync('./database.json'), fileName: 'database.json', mimetype: 'application/json' }, { quoted: null })
-		await this.sendMessage(global.rowner[0] + '@s.whatsapp.net', { document: await fs.readFileSync('./sessions/creds.json'), fileName: 'creds.json', mimetype: 'application/json' }, { quoted: null })
-        cooldown += new Date() * cooldowns
-}*/
+let handler = (m) => m
+handler.all = async function (m) {
+    const setting = db.data.datas
+        if (new Date() * 1 - setting.backup > 1000 * 60 * 60) {
+            let d = new Date()
+            let date = d.toLocaleDateString('id', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+            })
+            await db.write()
+            this.reply(global.rowner[0] + '@s.whatsapp.net', `Database: ${date}`, null)
+            let data = fs.readFileSync('./database.json')
+            await this.sendMessage(owner[0] + '@s.whatsapp.net', {
+                document: data,
+                mimetype: 'application/json',
+                fileName: 'database.json',
+            }, {
+                quoted: null
+            })
+            setting.backup = new Date() * 1
+        }
+    return !0
+}
+export default handler
