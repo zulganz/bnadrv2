@@ -50,7 +50,7 @@ handler.before = async m => {
         user.money -= count * 1
         _user.money += count * 1
         m.reply(`✨ Terima kasih!\n${m.name.split('\n')[0]} telah memberi sumbangan sebesar *${hasil}*`)
-        pesan.sendMessage(m.chat, { delete: key })
+        this.sendMessage(m.chat, { delete: key })
         clearTimeout(timeout)
         delete confirmation[sender]
         } else {
@@ -59,7 +59,7 @@ handler.before = async m => {
     }
     if (/(✖️|n(o)?)/g.test(m.text.toLowerCase())) {
         m.reply(`😔 ${m.name.split('\n')[0]} kamu berdosa banget kak...`)
-        pesan.sendMessage(m.chat, { delete: key })
+        this.sendMessage(m.chat, { delete: key })
         clearTimeout(timeout)
         delete confirmation[sender]
     }
