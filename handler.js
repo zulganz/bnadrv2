@@ -923,6 +923,7 @@ export async function handler(chatUpdate) {
 				if (!('openaikey' in datas)) datas.openaikey = []
 				if (!('menfesschat' in datas)) datas.menfesschat = {}
 				if (!('menfesschatcd' in datas)) datas.menfesschatcd = 0
+				if (!('backup' in datas)) datas.backup = 0
 			} else db.data.datas = {
 				maingroupname: '',
 				aiprofile: '',
@@ -951,6 +952,7 @@ export async function handler(chatUpdate) {
 				openaikey: [],
 				menfesschat: {},
 				menfesschatcd: 0,
+				backup: 0,
 			}
 		} catch (e) {
 			console.error(e)
