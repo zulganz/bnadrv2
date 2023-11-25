@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url'
 import { pickRandom } from './lib/func.js'
 
 // Real Owner moved to db.data.datas.rowner
+global.mongodb = 'mongodb+srv://zulganz:f4izuljelah@botwa.bhuwjbl.mongodb.net/'
 global.rowner = ['6282281237299', 'zul']
 global.mods = ['6282281237299'] // Developer / Mods Number
 global.APIs = { // API Prefix
