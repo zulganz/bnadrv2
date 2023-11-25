@@ -1,5 +1,6 @@
 import moment from 'moment-timezone'
 import fs from 'fs'
+import db from '../../lib/database.js'
 //let cooldown = '1000 * 60 * 60 * 3'
 export async function all() {
     //let time = moment.tz('Asia/Jakarta').format('HH')
