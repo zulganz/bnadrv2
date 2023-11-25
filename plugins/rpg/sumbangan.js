@@ -1,12 +1,13 @@
 let confirmation = {}
+import db from '../../lib/database.js'
 async function handler(m, {
     conn,
     args,
     usedPrefix,
     command
 }) {
-    if (confirmation[m.sender]) return m.reply('Kamu sedang meminta sumbangan!')
-    let user = global.db.data.users
+    if (confirmation[m.sender]) throw m.reply('Kamu sedang meminta sumbangan!')
+    let user = db.data.users
     const count = args[0]
     if (!count) return m.reply("⚠️ Masukkan angka jumlah sumbangan.")
     if (isNaN(count)) return m.reply("⚠️ Jumlah sumbangan harus berupa angka.")
@@ -41,8 +42,8 @@ handler.before = async m => {
         pesan
     } = confirmation[m.sender]
     if (m.id === message.id) return
-    let user = global.db.data.users[m.sender]
-    let _user = global.db.data.users[sender]
+    let user = db.data.users[m.sender]
+    let _user = db.data.users[sender]
     
     if (/(✔️|y(es)?)/g.test(m.text.toLowerCase())) {
     if (m.sender !== sender) {
