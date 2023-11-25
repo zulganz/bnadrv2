@@ -1,4 +1,3 @@
-import db from '../lib/database.js'
 import moment from 'moment-timezone'
 let cooldown = '1000 * 60 * 60 * 3'
 export async function all() {
