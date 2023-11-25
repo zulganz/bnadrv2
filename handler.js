@@ -107,7 +107,7 @@ export async function handler(chatUpdate) {
 					if (!isNumber(user.sand))
 						user.sand = 0
 					if (!isNumber(user.stamina))
-						user.stamina = 0
+						user.stamina = 100
 
 					if (!isNumber(user.emerald))
 						user.emerald = 0
