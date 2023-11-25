@@ -68,6 +68,7 @@ handler.help = ['sumbangan'].map(v => v + ' [jumlah]')
 handler.tags = ['rpg']
 handler.command = /^(sumbangan)$/i
 handler.disabled = false
+handler.group = true
 
 export default handler
 
