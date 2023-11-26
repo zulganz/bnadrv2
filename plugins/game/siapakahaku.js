@@ -37,7 +37,7 @@ handler.menufun = ['siapakahaku (money+)']
 handler.tagsfun = ['game']
 handler.command = /^(siapa(kah)?aku)$/i
 
-handler.premium = true
+handler.prem = true
 handler.game = true
 
 handler.register = true
