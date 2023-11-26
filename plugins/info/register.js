@@ -78,6 +78,7 @@ Terima kasih telah melakukan verifikasi. Data pengguna telah disimpan dengan ama
 handler.help = ["daftar", "register"].map(v => v + " <nama>.<umur>");
 handler.tags = ["xp"];
 handler.command = /^(register|verify|daftar|reg(is)?|verif)$/i;
+handler.private = true
 
 export default handler;
 
