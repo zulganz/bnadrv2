@@ -7,13 +7,14 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
 //let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
 let users = db.data.users[m.sender]
     conn.slots = conn.slots ? conn.slots : {}
+    let count = (args[0] && number(parseInt(args[0])) ? Math.max(parseInt(args[0]), 1) : /all/i.test(args[0]) ? Math.floor(parseInt(user.money)) : 1) * 1
     if (m.chat in conn.slots) return m.reply('Masih ada Yang Melakukan Slots Disini, Tunggu Sampai selesai!!')
-    if (users.money < args[0]) return m.reply('Uang Kamu Tidak Cukup Untuk Bermain Slots!!')
+    if (users.money < count) return m.reply('Uang Kamu Tidak Cukup Untuk Bermain Slots!!')
     else conn.slots[m.chat] = true
     try { 
         if (args.length < 1) return m.reply(`Gunakan format *${usedPrefix}${command} [jumlah]*
 contoh *${usedPrefix}${command} 10*`)
-        let count = args[0]
+        //let count = args[0]
         let _spin1 = pickRandom(['1', '2', '3', '4', '5'])  
         let _spin2 = pickRandom(['1', '2', '3', '4', '5'])  
         let _spin3 = pickRandom(['1', '2', '3', '4', '5'])  
