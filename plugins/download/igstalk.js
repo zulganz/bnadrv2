@@ -22,7 +22,7 @@ let handler= async (m, { conn, args, usedPrefix, command }) => {
 📝 ᴘᴏsᴛ ${post} 
 📑 Bɪᴏ: ${bio}
 `.trim()
-  conn.reply(m.chat, data, m)
+  conn.sendFile(m.chat, pepe, '', data, m)
 }
 
 handler.menudownload = ['igstalk'].map(v => v + ' <username>')
