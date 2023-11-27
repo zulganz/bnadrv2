@@ -24,6 +24,9 @@ let handler = async (m, { usedPrefix, command }) => {
 	const wood = ranNumb(1, 4)
 	const string = ranNumb(1, 3)
 	const common = ranNumb(1, 2)
+	const uncommon = ranNumb(1, 2)
+	const legendary = ranNumb(1, 2)
+	const mythic = ranNumb(1, 2)
 	const gold = 1
 	const emerald = 1
 	const diamond = 1
@@ -52,7 +55,7 @@ let handler = async (m, { usedPrefix, command }) => {
 	if (user.adventurecount % 50  == 0) txt += `\n\nBonus adventure ${user.adventurecount} kali\n*👑 gold :* ${gold}`
 	if (user.adventurecount % 150 == 0) txt += `\n\nBonus adventure ${user.adventurecount} kali\n*💚 emerald :* ${emerald}`
 	if (user.adventurecount % 400 == 0) txt += `\n\nBonus adventure ${user.adventurecount} kali\n*💎 diamond :* ${diamond}`
-	let RNGmomen = chance(['none', 'common', 'gold', 'emerald', 'diamond'], [40, 30, 20, 9, 1])
+	let RNGmomen = chance(['none', 'common', 'gold', 'emerald', 'diamond', 'uncommon', 'legendary', 'mythic'], [50, 10, 5, 2, 1, 10, 5, 2])
 	if (RNGmomen == 'common') {
 		user.common += common
 		txt += `\n\nSelamat anda mendapatkan *📦 common*`
@@ -65,6 +68,15 @@ let handler = async (m, { usedPrefix, command }) => {
 	} else if (RNGmomen == 'diamond') {
 		user.diamond += diamond
 		txt += `\n\nSelamat anda mendapatkan *💎 diamond*`
+	} else if (RNGmomen == 'uncommon') {
+		user.uncommon += uncommon
+		txt += `\n\nSelamat anda mendapatkan *📦 uncommon*`
+	} else if (RNGmomen == 'legendary') {
+		user.legendary += legendary
+		txt += `\n\nSelamat anda mendapatkan *📦 legendary*`
+	} else if (RNGmomen == 'mythic') {
+		user.mythic += mythic
+		txt += `\n\nSelamat anda mendapatkan *📦 mythic*`
 	} else if (RNGmomen == 'none') {
 		txt += `\n\nTidak ada bonus`
 	}
