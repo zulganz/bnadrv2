@@ -50,7 +50,7 @@ Terima kasih telah melakukan verifikasi. Data pengguna telah disimpan dengan ama
         const json = await createOtpCanvas(pp);
         let confirm = "💡 Reply pesan ini dengan mengetik kode OTP yang ada pada gambar!";
         let txt = `📝 *Registrasi* 📝\n\n@${m.sender.split('@')[0]}\n${confirm}\n\n_( Berlaku 1X )_`
-        let msg = await conn.sendMessage(who, {
+        let msg = await conn.sendMessage(m.chat, {
             image: json.image,
             caption: txt,
             mentions: [m.sender],
@@ -78,6 +78,7 @@ Terima kasih telah melakukan verifikasi. Data pengguna telah disimpan dengan ama
 handler.help = ["daftar", "register"].map(v => v + " <nama>.<umur>");
 handler.tags = ["xp"];
 handler.command = /^(register|verify|daftar|reg(is)?|verif)$/i;
+handler.private = true
 
 export default handler;
 
