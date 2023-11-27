@@ -1,16 +1,18 @@
-let handler = async (m, { conn, usedprefix }) => {
-	let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-	await conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/lolice', {
-		avatar: await conn.profilePictureUrl(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
-	}), '', `liuliuliuliuliu kami dengar disini ada lolicon`, m)
+import Booru from 'booru'
+import fetch from 'node-fetch'
+let sites = ['sb', 'kn', 'kc']
+
+let handler = async (m, { conn, usedPrefix, command }) => {
+	let res = await Booru.search(sites.getRandom(), ['loli'], { random: true })
+	let url = res[0].fileUrl
+	conn.sendFile(m.chat, url, '', 'Random Image Loli\n' + await shortUrl(url), m)
 }
+handler.help = ['fotololi']
+handler.tags = ['random']
+handler.command = /^(fotololi|loli)$/i
 
-handler.help = ['lolice']
-handler.tags = ['entertainment']
-handler.command = /^(lolice)$/i
-
-handler.premium = true
-handler.limit = true
-
-handler.register = true
 export default handler
+
+async function shortUrl(url) {
+	return await (await fetch(`https://tinyurl.com/api-create.php?url=${url}`)).text()
+}
