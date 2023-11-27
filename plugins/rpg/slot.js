@@ -7,7 +7,8 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
 //let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')}}}
 let users = db.data.users[m.sender]
     conn.slots = conn.slots ? conn.slots : {}
-    let count = (args[0] && number(parseInt(args[0])) ? Math.max(parseInt(args[0]), 1) : /all/i.test(args[0]) ? Math.floor(parseInt(user.money)) : 1) * 1
+    let userp = db.data.users[m.sender]
+    let count = (args[0] && number(parseInt(args[0])) ? Math.max(parseInt(args[0]), 1) : /all/i.test(args[0]) ? Math.floor(parseInt(userp.money)) : 1) * 1
     if (m.chat in conn.slots) return m.reply('Masih ada Yang Melakukan Slots Disini, Tunggu Sampai selesai!!')
     if (users.money < count) return m.reply('Uang Kamu Tidak Cukup Untuk Bermain Slots!!')
     else conn.slots[m.chat] = true
