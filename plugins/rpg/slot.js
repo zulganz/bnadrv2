@@ -99,3 +99,13 @@ export default handler
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
+
+/**
+ * Detect if thats number
+ * @param {Number} x 
+ * @returns Boolean
+ */
+function number(x = 0) {
+	x = parseInt(x)
+	return !isNaN(x) && typeof x == 'number'
+}
