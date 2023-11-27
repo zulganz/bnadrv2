@@ -2,7 +2,7 @@ import db from '../../lib/database.js'
 export async function before(m) {
     try {
     let user = db.data.users[m.sender]
-    if (!user) return
+    if (!user) return !0
     //Health
     if (user.health > 100) {
         user.health = 100;
