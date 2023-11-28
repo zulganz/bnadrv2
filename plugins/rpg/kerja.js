@@ -1,14 +1,14 @@
 import db from '../../lib/database.js';
 const jobs = {
-    ojek: [{ name: 'Ojek', task: '🛵 Mengantarkan penumpang', difficulty: pickRandom(['Noob', 'Easy', 'Normal']), money: randomMoney(50000, 1), exp: 15 }],
-    pedagang: [{ name: 'Pedagang', task: '🛒 Mencari pembeli', difficulty: pickRandom(['Noob', 'Easy', 'Normal']), money: randomMoney(50000, 1), exp: 25 }],
-    dokter: [{ name: 'Dokter', task: '💉 Merawat pasien', difficulty: pickRandom(['Easy', 'Normal', 'Hard']), money: randomMoney(50000, 1), exp: 40 }],
-    petani: [{ name: 'Petani', task: '🌾 Menanam dan memanen tanaman', difficulty: pickRandom(['Noob', 'Easy', 'Normal']), money: randomMoney(50000, 1), exp: 30 }],
-    montir: [{ name: 'Montir', task: '🔧 Memperbaiki kendaraan', difficulty: pickRandom(['Easy', 'Normal', 'Hard']), money: randomMoney(50000, 1), exp: 20 }],
+    ojek: [{ name: 'Ojek', task: '🛵 Mengantarkan penumpang', difficulty: pickRandom(['Noob', 'Easy', 'Normal']), money: randomMoney(5000, 1), exp: 15 }],
+    pedagang: [{ name: 'Pedagang', task: '🛒 Mencari pembeli', difficulty: pickRandom(['Noob', 'Easy', 'Normal']), money: randomMoney(5000, 1), exp: 25 }],
+    dokter: [{ name: 'Dokter', task: '💉 Merawat pasien', difficulty: pickRandom(['Easy', 'Normal', 'Hard']), money: randomMoney(5000, 1), exp: 40 }],
+    petani: [{ name: 'Petani', task: '🌾 Menanam dan memanen tanaman', difficulty: pickRandom(['Noob', 'Easy', 'Normal']), money: randomMoney(5000, 1), exp: 30 }],
+    montir: [{ name: 'Montir', task: '🔧 Memperbaiki kendaraan', difficulty: pickRandom(['Easy', 'Normal', 'Hard']), money: randomMoney(5000, 1), exp: 20 }],
     kuli: [{ name: 'Kuli', task: '🏋️ Membantu proyek konstruksi', difficulty: 'Extreme', money: randomMoney(50000, 1), exp: 50 }],
-    gamer: [{ name: 'Gamer', task: '🎮 Main game dan streaming', difficulty: pickRandom(['Noob', 'Easy', 'Normal', 'Hard']), money: randomMoney(50000, 1), exp: 10 }],
-    teacher: [{ name: 'Teacher', task: '👩‍🏫 Mengajar dan memberi pembelajaran', difficulty: pickRandom(['Noob', 'Easy', 'Normal', 'Hard']), money: randomMoney(50000, 1), exp: 35 }],
-    designer: [{ name: 'Graphic Designer', task: '🎨 Membuat desain grafis', difficulty: pickRandom(['Easy', 'Normal', 'Hard']), money: randomMoney(50000, 1), exp: 28 }],
+    gamer: [{ name: 'Gamer', task: '🎮 Main game dan streaming', difficulty: pickRandom(['Noob', 'Easy', 'Normal', 'Hard']), money: randomMoney(5000, 1), exp: 10 }],
+    teacher: [{ name: 'Teacher', task: '👩‍🏫 Mengajar dan memberi pembelajaran', difficulty: pickRandom(['Noob', 'Easy', 'Normal', 'Hard']), money: randomMoney(5000, 1), exp: 35 }],
+    designer: [{ name: 'Graphic Designer', task: '🎨 Membuat desain grafis', difficulty: pickRandom(['Easy', 'Normal', 'Hard']), money: randomMoney(5000, 1), exp: 28 }],
 };
 
 const taskInformation = {
