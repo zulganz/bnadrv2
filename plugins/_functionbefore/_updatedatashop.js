@@ -4,8 +4,7 @@ import fs from 'fs';
 
 export async function all(m, {conn}) {
     let datas = db.data.datas;
-    let randomhour = ranNumb(1, 3);
-    let cooldown = 1000 * 60 * randomhour; // Random Hours in millisecond
+    let cooldown = 1000 * 60 * 1; // if release it will be 24 Hours in millisecond
 
     if (new Date() * 1 - datas.lastupdategraph > cooldown) {
         let d = new Date()
@@ -23,7 +22,7 @@ export async function all(m, {conn}) {
         datas.graphshopbanana = rannumba;
         datas.graphshopapple = rannumbb;
         datas.graphshopwatermelon = rannumbc;
-        let graph = fs.writeFilesync('./datagraph.json', JSON.stringify(datas, null, '\t'))
+        //let graph = fs.writeFilesync('./datagraph.json', JSON.stringify(datas, null, '\t'))
         let caption = `*Graph Shop*\n\nBanana: ${formatRupiah(rannumba)}\nApple: ${formatRupiah(rannumbb)}\nWatermelon: ${formatRupiah(rannumbc)}`;
         this.reply(global.rowner[0] + '@s.whatsapp.net', caption, null)
         datas.lastupdategraph = new Date() * 1;
