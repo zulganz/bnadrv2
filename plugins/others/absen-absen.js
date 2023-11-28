@@ -16,7 +16,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         year: 'numeric'
     })
     
-    let list = absen.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')
+    let list = absen.map((v, i) => ` ${i + 1}.  @${v.split`@`[0]}`).join('\n')
             let caption = `*${htjava} TANGGAL ${htjava}*\n${date}
 ${conn.absen[id][2]}
 
