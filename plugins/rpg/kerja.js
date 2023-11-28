@@ -81,7 +81,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     let type = (args[0] || '').toLowerCase();
     let user = db.data.users[m.sender];
     let timeNow = Date.now();
-    let cooldown = 86400000; // 24 hours in milliseconds
+    let cooldown = 1000 * 60 * 60 * 2; // 24 hours in milliseconds
 
     conn.lastWorkTime = conn.lastWorkTime ? conn.lastWorkTime : {};
 
