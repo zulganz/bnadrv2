@@ -59,6 +59,7 @@ global.formatRupiah = function(number) {
   }
 
   global.flaaa = ImgLogoDynamic()
+  global.pmenus = pickRandom(["乂", "◈", "➭", "ଓ", "⟆•", "⳻", "•", "↬", "◈", "⭑", "ᯬ", "◉", "᭻", "»", "〆", "々", "⛥", "✗", "⚜", "⚚", "♪"])
   global.htjava = pickRandom(["乂", "⛶", "❏", "⫹⫺", "☰", "⎔", "✦", "⭔", "⬟", "⛊", "⚝"])
   global.dmenut = htjava + "───『"
 global.dmenub = "│" + pmenus
