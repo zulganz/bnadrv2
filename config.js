@@ -2,7 +2,8 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import { pickRandom } from './lib/func.js'
-
+import { ranNumb
+ } from './lib/func.js'
 // Real Owner moved to db.data.datas.rowner
 //global.mongodb = 'mongodb+srv://zulganz:f4izuljelah@botwa.bhuwjbl.mongodb.net/datas?retryWrites=true&w=majority'
 global.rowner = ['6282281237299', 'zul']

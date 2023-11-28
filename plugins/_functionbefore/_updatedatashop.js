@@ -1,5 +1,4 @@
 import db from '../../lib/database.js';
-import { ranNumb } from '../../lib/func.js';
 
 export async function all(m, {conn}) {
     let datas = db.data.datas;
