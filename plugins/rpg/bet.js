@@ -8,7 +8,7 @@ async function handler(m, { conn, args }) {
 	try {
 		let user = db.data.users[m.sender]
 		let count = (args[0] && number(parseInt(args[0])) ? Math.max(parseInt(args[0]), 1) : /all/i.test(args[0]) ? Math.floor(parseInt(user.money)) : 1) * 1
-		if (user.money < 100000) return m.reply(`Dasar gak modal, minimal judi bawa\n💵 100000 Money`)
+		if (user.money < 5000) return m.reply(`Dasar gak modal, minimal judi bawa\n💵 100000 Money`)
 		if (user.money < count) return m.reply(`Lu gak punya 💵 Money segitu!`)
 		if (!(m.sender in confirm)) {
 			confirm[m.sender] = {
