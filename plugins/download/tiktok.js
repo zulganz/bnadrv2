@@ -42,7 +42,7 @@ let spas = "                "
 \n${spas}*[ ${feature.toUpperCase()} ]*`
                 await conn.sendFile(m.chat, S.download.nowm, "", ScrapCap, m)
             } catch (e) {
-                throw eror
+                throw 'eror'
             }
         }
         if (feature == "v2") {
@@ -56,7 +56,7 @@ let spas = "                "
 \n${spas}*[ ${feature.toUpperCase()} ]*`
                 await conn.sendFile(m.chat, god.data.video_no_watermark, "", GoCap, m)
             } catch (e) {
-                throw eror
+                throw 'eror'
             }
         }
         if (feature == "v3") {
@@ -73,7 +73,7 @@ let spas = "                "
 *Description:* ${Fg.description}\n${spas}*[ ${feature.toUpperCase()} ]*`
                 await conn.sendFile(m.chat, Fg.play || Fg.hdplay , "", FgCap, m)
             } catch (e) {
-                throw eror
+                throw 'eror'
             }
         }
         if (feature == "v4") {
@@ -92,7 +92,7 @@ ${getVideoInfo(video)}
 \n${spas}*[ ${feature.toUpperCase()} ]*`
                 await conn.sendFile(m.chat, buffer || giflogo , "", PrevCap, m)
             } catch (e) {
-                throw eror
+                throw 'eror'
             }
         }
         if (feature == "v5") {
@@ -107,7 +107,7 @@ ${getUserProfileInfo(videoX)}
 \n${spas}*[ ${feature.toUpperCase()} ]*`
                 await conn.sendFile(m.chat, videoX.download.nowm || giflogo , "", XctCap, m)
             } catch (e) {
-                throw eror
+                throw 'eror'
             }
         }
 
