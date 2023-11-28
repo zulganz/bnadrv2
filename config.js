@@ -59,7 +59,11 @@ global.formatRupiah = function(number) {
   }
 
   global.flaaa = ImgLogoDynamic()
-  
+  global.htjava = pickRandom(["乂", "⛶", "❏", "⫹⫺", "☰", "⎔", "✦", "⭔", "⬟", "⛊", "⚝"])
+  global.dmenut = htjava + "───『"
+global.dmenub = "│" + pmenus
+global.dmenub2 = "│" + pmenus
+global.dmenuf = "╰──────────⳹"
 global.wait = "_🕚 Mohon tunggu, dalam proses!_"
 global.rpg = {
 	emoticon(string) {
