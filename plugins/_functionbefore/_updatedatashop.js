@@ -21,6 +21,7 @@ export async function all(m, {conn}) {
         datas.graphshopwatermelon = rannumbc;
         let caption = `*Graph Shop*\n\nBanana: ${formatRupiah(rannumba)}\nApple: ${formatRupiah(rannumbb)}\nWatermelon: ${formatRupiah(rannumbc)}`;
         this.reply(global.rowner[0] + '@s.whatsapp.net', caption, null)
+        datas.lastupdategraph = new Date() * 1;
     }
     return !0
 }
