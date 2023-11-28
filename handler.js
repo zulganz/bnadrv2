@@ -924,6 +924,10 @@ export async function handler(chatUpdate) {
 				if (!('menfesschat' in datas)) datas.menfesschat = {}
 				if (!('menfesschatcd' in datas)) datas.menfesschatcd = 0
 				if (!('backup' in datas)) datas.backup = 0
+				if (!('lastupdategraph' in datas)) datas.lastupdategraph = 0
+				if (!('graphshopbanana' in datas)) datas.graphshopbanana = 0
+				if (!('graphshopapple' in datas)) datas.graphshopapple = 0
+				if (!('graphshopwatermelon' in datas)) datas.graphshopwatermelon = 0
 			} else db.data.datas = {
 				maingroupname: '',
 				aiprofile: '',
@@ -953,6 +957,10 @@ export async function handler(chatUpdate) {
 				menfesschat: {},
 				menfesschatcd: 0,
 				backup: 0,
+				lastupdategraph: 0,
+				graphshopbanana: 0,
+				graphshopapple: 0,
+				graphshopwatermelon: 0
 			}
 		} catch (e) {
 			console.error(e)
