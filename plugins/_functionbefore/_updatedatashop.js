@@ -3,11 +3,13 @@ import { ranNumb } from '../../lib/func.js';
 
 export async function all(m, {conn}) {
     let datas = db.data.datas;
-    let cooldown = 1000 * 60 * 24; // 24 hours in millisecond
+    let cooldown = 1000 * 60 * ranNumb(1, 24); // Random Hours in millisecond
 
     if (new Date() * 1 - datas.lastupdategraph > cooldown) {
         let d = new Date()
         let date = d.toLocaleDateString('id', {
+            second: 'numeric',
+            hour: 'numeric',
             day: 'numeric',
             month: 'long',
             year: 'numeric',
