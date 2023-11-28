@@ -13,9 +13,6 @@ export async function all(m, {conn}) {
             year: 'numeric',
         })
         this.reply(global.rowner[0] + '@s.whatsapp.net', `Update shop: ${date}`, null)
-        let rannumba = ranNumb(10, 10000);
-        let rannumbb = ranNumb(10, 10000);
-        let rannumbc = ranNumb(10, 10000);
         datas.graphshopbanana = rannumba;
         datas.graphshopapple = rannumbb;
         datas.graphshopwatermelon = rannumbc;

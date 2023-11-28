@@ -58,6 +58,10 @@ global.formatRupiah = function(number) {
 	return formatter.format(number);
   }
 
+  global.rannumba = ranNumb(10, 10000);
+  global.rannumbb = ranNumb(10, 10000);
+  global.rannumbc = ranNumb(10, 10000);
+
   global.flaaa = ImgLogoDynamic()
   global.pmenus = pickRandom(["乂", "◈", "➭", "ଓ", "⟆•", "⳻", "•", "↬", "◈", "⭑", "ᯬ", "◉", "᭻", "»", "〆", "々", "⛥", "✗", "⚜", "⚚", "♪"])
   global.htjava = pickRandom(["乂", "⛶", "❏", "⫹⫺", "☰", "⎔", "✦", "⭔", "⬟", "⛊", "⚝"])
