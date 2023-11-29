@@ -73,7 +73,7 @@ global.formatRupiah = function(number) {
 		}
 		// add number after decimal point
 		if (val.toString().includes(',')) {
-		  num = num + '.' + val.toString().split('.')[1];
+		  num = num + ',' + val.toString().split(',')[1];
 		}
 		// return result with - sign if negative
 		return sign < 0 ? '-' + num : num;
