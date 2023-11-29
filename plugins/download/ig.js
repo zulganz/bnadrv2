@@ -9,7 +9,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         await conn.sendFile(m.chat, res, 'ig' + args[0].substr(args[0].lastIndexOf('.')), null, m)
     })
 } catch (e) {
-    m.reply('Error')
     console.log (e)
 }
     }
