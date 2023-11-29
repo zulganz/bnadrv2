@@ -87,7 +87,7 @@ const inventory = {
 let handler = async (m, { conn }) => {
 	let user = db.data.users[m.sender]
 	const others = Object.keys(inventory.others).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v} :* ${user[v]}`).filter(v => v).join('\n').trim()
-	const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v} :* ${foramt(user[v])}`).filter(v => v).join('\n').trim()
+	const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v} :* ${format(user[v])}`).filter(v => v).join('\n').trim()
 	const builds = Object.keys(inventory.builds).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v} :* ${format(user[v])} ( level ${user[`${v}lvl`]} )`).filter(v => v).join('\n').trim()
 	const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v} :* ${format(user[v])}`).filter(v => v).join('\n').trim()
 	const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v} :* ${format(user[v])} ( level ${user[`${v}lvl`]} )`).filter(v => v).join('\n').trim()
