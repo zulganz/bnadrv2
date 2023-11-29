@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
 	let botolnye = `${Math.floor(Math.random() * 1000)}`.trim()
     db.data.users[m.sender].trash += botolnye * 1
 	db.data.users[m.sender].lastmulung = new Date * 1
-  let txt = `Selamat kamu mendapatkan : \n+Sampah 🗑️\n+${botolnye}`
+  let txt = `Selamat kamu mendapatkan : \nSampah 🗑️+${botolnye}`
   let RNGmomen = chance(['none', 'common', 'gold', 'emerald', 'diamond', 'uncommon', 'legendary', 'mythic'], [50, 10, 5, 2, 1, 10, 5, 2])
 	if (RNGmomen == 'common') {
 		user.common += common
