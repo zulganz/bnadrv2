@@ -97,7 +97,7 @@ let handler = async (m, { conn }) => {
 	const caption = `
 Inventory *${conn.getName(m.sender)}*
 
-${Object.keys(inventory.others).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${v == 'money' ? `${formatRupiah(user[v])}` : user[v]}`).filter(v => v).join('\n')}${items ? `
+${Object.keys(inventory.others).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${v == 'money' ? `${formatRupiah(user[v])}` : format(user[v])}`).filter(v => v).join('\n')}${items ? `
 
 *📍 Items*
 ${items}
