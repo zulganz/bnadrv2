@@ -1,6 +1,7 @@
 
 const timeout = 1800000
 import db from '../../lib/database.js'
+import { ranNumb } from '../../lib/func.js'
 let handler = async (m, { conn, usedPrefix, text }) => {
 	    let time = db.data.users[m.sender].lastmulung + 1800000
       let user = db.data.users[m.sender]
