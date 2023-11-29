@@ -4,6 +4,14 @@ import db from '../../lib/database.js'
 let handler = async (m, { conn, usedPrefix, text }) => {
 	    let time = db.data.users[m.sender].lastmulung + 1800000
       let user = db.data.users[m.sender]
+      const common = ranNumb(1, 2)
+      const uncommon = ranNumb(1, 2)
+      const legendary = ranNumb(1, 2)
+      const mythic = ranNumb(1, 2)
+      const gold = 1
+      const emerald = 1
+      const diamond = 1
+    
   if (new Date - db.data.users[m.sender].lastmulung < 1800000) throw `Anda sudah lelah untuk mulung\nTunggu selama ${msToTime(time - new Date())} lagi`
 	let botolnye = `${Math.floor(Math.random() * 1000)}`.trim()
     db.data.users[m.sender].trash += botolnye * 1
