@@ -280,6 +280,8 @@ export async function handler(chatUpdate) {
 						user.lastberkebon = 0
 					if (!isNumber(user.lastmasak))
 						user.lastmasak = 0
+					if (!isNumber(user.lastmulung))
+						user.lastmulung = 0
 					if (!isNumber(user.masakcount))
 						user.masakcount = 0
 					if (!isNumber(user.craftcount))
@@ -611,6 +613,7 @@ export async function handler(chatUpdate) {
 					lastdagang: 0,
 					lastberkebon: 0,
 					lastmasak: 0,
+					lastmulung: 0,
 					masakcount: 0,
 					craftcount: 0,
 					adventurecount: 0,

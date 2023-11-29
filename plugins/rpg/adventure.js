@@ -84,11 +84,11 @@ let handler = async (m, { usedPrefix, command }) => {
 	user.lastadventure = new Date * 1
 }
 
-handler.menufun = ['adventure', 'petualang', 'berpetualang', 'mulung']
+handler.menufun = ['adventure', 'petualang', 'berpetualang']
 handler.tagsfun = ['rpg']
 handler.tags = ['rpg']
-handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung']
-handler.command = /^(adventure|(ber)?petualang(ang)?|mulung)$/i
+handler.help = ['adventure', 'petualang', 'berpetualang']
+handler.command = /^(adventure|(ber)?petualang(ang)?)$/i
 
 handler.cooldown = cooldown
 
