@@ -36,7 +36,7 @@ let spas = "                "
                 await m.reply(wait)
                 await conn.sendFile(m.chat, out, "", caption, m)
             } catch (e) {
-                await m.reply(eror)
+                await console.log(e)
             }
         }
         if (feature == "v2") {
@@ -51,7 +51,7 @@ let spas = "                "
                 await m.reply(wait)
                 await conn.sendFile(m.chat, out, "", caption, m)
             } catch (e) {
-                await m.reply(eror)
+                await console.log(e)
             }
 
         }
@@ -66,7 +66,7 @@ let spas = "                "
                 await m.reply(wait)
                 await conn.sendFile(m.chat, out, "", caption, m)
             } catch (e) {
-                await m.reply(eror)
+                await console.log(e)
             }
 
         }
@@ -82,7 +82,7 @@ let spas = "                "
                 await m.reply(wait)
                 await conn.sendFile(m.chat, out, "", caption, m)
             } catch (e) {
-                await m.reply(eror)
+                await console.log(e)
             }
 
         }
