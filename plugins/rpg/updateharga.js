@@ -3,7 +3,7 @@ import db from '../../lib/database.js'
 let handler = async (m, { conn }) => {
     let datas = db.data.datas  
     let caption = `*Graph Shop*\n\nBanana: ${formatRupiah(datas.graphshopbanana)}\nApple: ${formatRupiah(datas.graphshopapple)}\nWatermelon: ${formatRupiah(datas.graphshopwatermelon)}`
-    conn.sendMsg(m.chat, caption, m)
+    conn.sendMsg(m.chat, caption, { quoted: m })
 }
 handler.tags = ['rpg']
 handler.tagsfun = ['rpg']
