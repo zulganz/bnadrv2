@@ -2,7 +2,6 @@ import { Instagram } from "../../lib/instagram.js"
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     try {
-        const instagram = new Instagram();
     if (!args[0]) throw `*Perintah ini untuk mengunduh video dari instagram dengan link*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/CFqX7ZpJfV0/?utm_medium=copy_link`
     if (!args[0].match(/instagram\.com\/(?:reel|p|tv|([A-Za-z0-9-_.]+\/(reel|p|tv)))\/[A-Za-z0-9-_.]+/g)) throw `*Link salah! Perintah ini untuk mengunduh video dari instagram dengan link*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/CFqX7ZpJfV0/?utm_medium=copy_link`
     instagram.download(args[0]).then(async res => {
