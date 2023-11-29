@@ -3,6 +3,7 @@ const timeout = 1800000
 import db from '../../lib/database.js'
 let handler = async (m, { conn, usedPrefix, text }) => {
 	    let time = db.data.users[m.sender].lastmulung + 1800000
+      let user = db.data.users[m.sender]
   if (new Date - db.data.users[m.sender].lastmulung < 1800000) throw `Anda sudah lelah untuk mulung\nTunggu selama ${msToTime(time - new Date())} lagi`
 	let botolnye = `${Math.floor(Math.random() * 1000)}`.trim()
     db.data.users[m.sender].trash += botolnye * 1
