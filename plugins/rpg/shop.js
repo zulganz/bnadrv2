@@ -434,9 +434,9 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 	info += `%| 🦊 fox:      ${formatRupiah(items.buy.fox.money)}%`
 	info += `%| 🐕 dog:      ${formatRupiah(items.buy.dog.money)}%\n`
 	info += `%| 🐺 wolf:     ${formatRupiah(items.buy.wolf.money)}%`
-	info += `%| 🐎 centaur:  ${formatRupiah(items.buy.centaur.money)}%\n`
-	info += `%| 🦜 phoenix:  ${formatRupiah(items.buy.phoenix.money)}%`
-	info += `%| 🐉 dragon:   ${formatRupiah(items.buy.dragon.money)}%\n\n`
+	info += `%| 🐎 centaur:  ${formatRupiah(items.buy.centaur.gold)}%\n`
+	info += `%| 🦜 phoenix:  ${formatRupiah(items.buy.phoenix.emerald)}%`
+	info += `%| 🐉 dragon:   ${formatRupiah(items.buy.dragon.diamond)}%\n\n`
 	info += `*━━━[ BUILDINGS ]━━━*\n`
 	info += `%| 🏥 rumahsakit:${formatRupiah(items.buy.rumahsakit.money)}%`
 	info += `%| 🏭 restoran: ${formatRupiah(items.buy.restoran.money)}%\n`
