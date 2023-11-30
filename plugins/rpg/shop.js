@@ -281,7 +281,21 @@ const items = {
 		udang: {
 			money: 6750,
 		},
-		mangga, anggur, jeruk, pisang, apel,
+		mangga: {
+			money: db.data.datas.graphshopmangga,
+		},
+		anggur: {
+			money: db.data.datas.graphshopanggur,
+		},
+		jeruk: {
+			money: db.data.datas.graphshopjeruk,
+		},
+		pisang: {
+			money: db.data.datas.graphshoppisang,
+		},
+		apel: {
+			money: db.data.datas.graphshopapel,
+		},
 		steak: {
 			money: 35000,
 		},
