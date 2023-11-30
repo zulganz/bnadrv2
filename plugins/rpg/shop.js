@@ -391,11 +391,11 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 	info += `%| saus:    ${formatRupiah(items.buy.saus.money)}%\n`
 	info += `%| asam:    ${formatRupiah(items.buy.asam.money)}%\n\n`
 	info += `*━━━[ GARDENING MATERIALS ]━━━*\n`
-	info += `%| 🌾 bibitmangga:  ${formatRupiah(items.buy.bibitmangga)}%\n`
-	info += `%| 🌾 bibitapel: ${formatRupiah(items.buy.bibitapel)}%\n`
-	info += `%| 🌾 bibitanggur: ${formatRupiah(items.buy.bibitanggur)}%\n`
-	info += `%| 🌾 bibitpisang: ${formatRupiah(items.buy.bibitpisang)}%\n`
-	info += `%| 🌾 bibitjeruk: ${formatRupiah(items.buy.bibitjeruk)}%\n\n`
+	info += `%| 🌾 bibitmangga:  ${formatRupiah(items.buy.bibitmangga.money)}%\n`
+	info += `%| 🌾 bibitapel: ${formatRupiah(items.buy.bibitapel.money)}%\n`
+	info += `%| 🌾 bibitanggur: ${formatRupiah(items.buy.bibitanggur.money)}%\n`
+	info += `%| 🌾 bibitpisang: ${formatRupiah(items.buy.bibitpisang.money)}%\n`
+	info += `%| 🌾 bibitjeruk: ${formatRupiah(items.buy.bibitjeruk.money)}%\n\n`
 	info += `*━━━[ GACHA BOX ]━━━*\n`
 	info += `%| 📦 common%:  ${formatRupiah(items.buy.common.money)}\n`
 	info += `%| 📦 uncommon%:  ${formatRupiah(items.buy.uncommon.money)}\n`
