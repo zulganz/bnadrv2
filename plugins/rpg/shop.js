@@ -423,7 +423,7 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 
 	let infos = `Format : *${usedPrefix + command} [item] [jumlah]*\n`
 	infos += `Contoh : *${usedPrefix}${command} potion 10*\n\n`
-	infos += `*━━━[ DAILY ITEMS ]━━━*\n%🥤 potion%\n%🍖 petfood%\n%🌌 trash%\n\n`
+	/*infos += `*━━━[ DAILY ITEMS ]━━━*\n%🥤 potion%\n%🍖 petfood%\n%🌌 trash%\n\n`
 	infos += `*━━━[ SELL ANIMALS ]━━━*\n`
 	infos += `%| 🐂 banteng | 🐅 harimau%\n`
 	infos += `%| 🐘 gajah   | 🐐 kambing%\n`
@@ -455,7 +455,44 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 	infos += `%| 🏭 restoran%\n`
 	infos += `%| 🏯 pabrik%\n`
 	infos += `%| ⚒️ tambang%\n`
-	infos += `%| 🛳️ pelabuhan%`
+	infos += `%| 🛳️ pelabuhan%`*/
+	infos += `*━━━[ DAILY ITEMS ]━━━*\n%🥤 potion%\n%🍖 petfood%\n%🌌 trash%\n\n`
+	infos += `*━━━[ SELL ANIMALS ]━━━*\n`
+	infos += `%| 🐂 banteng:  ${formatRupiah(items.sell.banteng.money)}%\n%| 🐅 harimau:  ${formatRupiah(items.sell.harimau.money)}%\n`
+	infos += `%| 🐘 gajah:    ${formatRupiah(items.sell.gajah.money)}%\n%| 🐐 kambing:  ${formatRupiah(items.sell.kambing.money)}%\n`
+	infos += `%| 🐼 panda:    ${formatRupiah(items.sell.panda.money)}%\n%| 🐊 buaya:    ${formatRupiah(items.sell.buaya.money)}%\n`
+	infos += `%| 🐃 kerbau:   ${formatRupiah(items.sell.kerbau.money)}%\n%| 🐄 sapi:     ${formatRupiah(items.sell.sapi.money)}%\n`
+	infos += `%| 🐒 monyet:   ${formatRupiah(items.sell.monyet.money)}%\n%| 🐗 babihutan:${formatRupiah(items.sell.babihutan.money)}%\n`
+	infos += `%| 🐖 babi:     ${formatRupiah(items.sell.babi.money)}%\n%| 🐔 ayam:     ${formatRupiah(items.sell.ayam.money)}%\n\n`
+	infos += `*━━━[ SEA ANIMALS ]━━━*${readMore}\n`
+	infos += `%| 🐋 orca:     ${formatRupiah(items.sell.orca.money)}%\n%| 🐳 paus:     ${formatRupiah(items.sell.paus.money)}%\n`
+	infos += `%| 🐬 lumba:    ${formatRupiah(items.sell.lumba.money)}%\n%| 🦈 hiu:      ${formatRupiah(items.sell.hiu.money)}%\n`
+	infos += `%| 🐟 ikan:     ${formatRupiah(items.sell.ikan.money)}%\n%| 🐟 lele:     ${formatRupiah(items.sell.lele.money)}%\n`
+	infos += `%| 🐡 bawal:    ${formatRupiah(items.sell.bawal.money)}%\n%| 🐠 nila:     ${formatRupiah(items.sell.nila.money)}%\n`
+	infos += `%| 🦀 kepiting: ${formatRupiah(items.sell.kepiting.money)}%\n%| 🦞 lobster:  ${formatRupiah(items.sell.lobster.money)}%\n`
+	infos += `%| 🐙 gurita:   ${formatRupiah(items.sell.gurita.money)}%\n%| 🦑 cumi:     ${formatRupiah(items.sell.cumi.money)}%\n`
+	infos += `%| 🦐 udang:    ${formatRupiah(items.sell.udang.money)}%\n\n`
+	infos += `*━━━[ SELL FRUITS ]━━━*\n`
+	infos += `%| 🥭 mangga:   ${formatRupiah(items.sell.mangga.money)}%\n`
+	infos += `%| 🍇 anggur:   ${formatRupiah(items.sell.anggur.money)}%\n`
+	infos += `%| 🍊 jeruk:    ${formatRupiah(items.sell.jeruk.money)}%\n`
+	infos += `%| 🍌 pisang:   ${formatRupiah(items.sell.pisang.money)}%\n`
+	infos += `%| 🍎 apel:     ${formatRupiah(items.sell.apel.money)}%\n\n`
+	infos += `*━━━[ PET SELL ]━━━*\n`
+	infos += `%| 🐎 horse:    ${formatRupiah(items.sell.horse.money)}%\n`
+	infos += `%| 🐈 cat:      ${formatRupiah(items.sell.cat.money)}%\n`
+	infos += `%| 🦊 fox:      ${formatRupiah(items.sell.fox.money)}%\n`
+	infos += `%| 🐕 dog:      ${formatRupiah(items.sell.dog.money)}%\n`
+	infos += `%| 🐎 centaur:  ${formatRupiah(items.sell.centaur.money)}%\n`
+	infos += `%| 🦜 phoenix:  ${formatRupiah(items.sell.phoenix.money)}%\n`
+	infos += `%| 🐉 dragon:   ${formatRupiah(items.sell.dragon.money)}%\n\n`
+	infos += `*━━━[ BUILDINGS ]━━━*\n`
+	infos += `%| 🏥 rumahsakit:${formatRupiah(items.sell.rumahsakit.money)}%\n`
+	infos += `%| 🏭 restoran: ${formatRupiah(items.sell.restoran.money)}%\n`
+	infos += `%| 🏯 pabrik:   ${formatRupiah(items.sell.pabrik.money)}%\n`
+	infos += `%| ⚒️ tambang:  ${formatRupiah(items.sell.tambang.money)}%\n`
+	infos += `%| 🛳️ pelabuhan:${formatRupiah(items.sell.pelabuhan.money)}%`
+
 	
 	const item = (args[0] || '').toLowerCase()
 	const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
