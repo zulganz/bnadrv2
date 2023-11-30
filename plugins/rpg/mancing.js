@@ -1,7 +1,7 @@
 import db from '../../lib/database.js'
 import { ranNumb } from '../../lib/func.js'
 
-const cooldown = 43200000
+const cooldown = 1000 * 60 * 50
 const cooldownn = 180000
 
 let handler = async (m, { conn, command, usedPrefix }) => {
