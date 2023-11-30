@@ -51,7 +51,26 @@ export async function all(m, {conn}) {
         datas.hargababi = rannumb11;
         datas.hargaayam = rannumb12;
         //let graph = fs.writeFilesync('./datagraph.json', JSON.stringify(datas, null, '\t'))
-        let caption = `*Harga Buah*\n\n%Mangga: ${formatRupiah(rannumba)}%\n%Anggur: ${formatRupiah(rannumbb)}%\n%Jeruk: ${formatRupiah(rannumbc)}%\n%Pisang: ${formatRupiah(rannumbd)}%\n%Apel: ${formatRupiah(rannumbe)}%\n\n*Harga Hewan*\n\n%Banteng: ${formatRupiah(rannumb1)}%\n%Harimau: ${formatRupiah(rannumb2)}%\n%Gajah: ${formatRupiah(rannumb3)}%\n%Kambing: ${formatRupiah(rannumb4)}%\n%Panda: ${formatRupiah(rannumb5)}%\n%Buaya: ${formatRupiah(rannumb6)}%\n%Kerbau: ${formatRupiah(rannumb7)}%\n%Sapi: ${formatRupiah(rannumb8)}%\n%Monyet: ${formatRupiah(rannumb9)}%\n%Babi Hutan: ${formatRupiah(rannumb10)}%\n%Babi: ${formatRupiah(rannumb11)}%\n%Ayam: ${formatRupiah(rannumb12)}%\n\n*Update: ${date}*`;
+        let caption = `*Harga Buah*\n\n`
+        caption += `%Mangga: ${rannumba}%\n`
+        caption += `%Anggur: ${rannumbb}%\n`
+        caption += `%Jeruk: ${rannumbc}%\n`
+        caption += `%Pisang: ${rannumbd}%\n`
+        caption += `%Apel: ${rannumbe}%\n\n`
+        caption += `*Harga Hewan*\n\n`
+        caption += `%Banteng: ${rannumb1}%\n`
+        caption += `%Harimau: ${rannumb2}%\n`
+        caption += `%Gajah: ${rannumb3}%\n`
+        caption += `%Kambing: ${rannumb4}%\n`
+        caption += `%Panda: ${rannumb5}%\n`
+        caption += `%Buaya: ${rannumb6}%\n`
+        caption += `%Kerbau: ${rannumb7}%\n`
+        caption += `%Sapi: ${rannumb8}%\n`
+        caption += `%Monyet: ${rannumb9}%\n`
+        caption += `%Babi Hutan: ${rannumb10}%\n`
+        caption += `%Babi: ${rannumb11}%\n`
+        caption += `%Ayam: ${rannumb12}%\n\n`
+        caption += `*Update: ${date}*`
         this.reply(global.rowner[0] + '@s.whatsapp.net', caption, null)
         datas.lastupdategraph = new Date() * 1;
     }
