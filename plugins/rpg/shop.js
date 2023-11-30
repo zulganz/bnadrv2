@@ -538,7 +538,7 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]}${global.rpg.emoticon(item)}${item}* untuk dijual.`)
 			user[item] -= total
 			user.money += listItems[item].money * total
-			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}* dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(listItems[item].money * total)} ${paymentMethod}*`)
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}* dengan sharga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(listItems[item].money * total)} ${paymentMethod}*`)
 		}
 	}
 }
