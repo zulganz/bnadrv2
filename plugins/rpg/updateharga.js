@@ -5,8 +5,6 @@ let handler = async (m, { conn }) => {
     let caption = `*Graph Shop*\n\nBanana: ${formatRupiah(datas.graphshopbanana)}\nApple: ${formatRupiah(datas.graphshopapple)}\nWatermelon: ${formatRupiah(datas.graphshopwatermelon)}`
     m.reply(caption)
 }
-handler.tags = ['rpg']
-handler.tagsfun = ['rpg']
 handler.command = /^(updateharga)$/i
 handler.owner = true
 export default handler
