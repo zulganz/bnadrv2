@@ -15,7 +15,7 @@ export async function all(m, {conn}) {
             month: 'long',
             year: 'numeric',
         })
-        this.reply(global.rowner[0] + '@s.whatsapp.net', `Update shop: ${date}`, null)
+        //this.reply(global.rowner[0] + '@s.whatsapp.net', `Update shop: ${date}`, null)
         let rannumba = ranNumb(100, 300);
         let rannumbb = ranNumb(100, 500);
         let rannumbc = ranNumb(100, 400);
