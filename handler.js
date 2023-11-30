@@ -933,6 +933,18 @@ export async function handler(chatUpdate) {
 				if (!('graphshopjeruk' in datas)) datas.graphshopjeruk = 0
 				if (!('graphshoppisang' in datas)) datas.graphshoppisang = 0
 				if (!('graphshopapel' in datas)) datas.graphshopapel = 0
+				if (!('hargabanteng' in datas)) datas.hargabanteng = 0
+				if (!('hargaharimau' in datas)) datas.hargaharimau = 0
+				if (!('hargagajah' in datas)) datas.hargagajah = 0
+				if (!('hargakambing' in datas)) datas.hargakambing = 0
+				if (!('hargapanda' in datas)) datas.hargapanda = 0
+				if (!('hargabuaya' in datas)) datas.hargabuaya = 0
+				if (!('hargakerbau' in datas)) datas.hargakerbau = 0
+				if (!('hargasapi' in datas)) datas.hargasapi = 0
+				if (!('hargamonyet' in datas)) datas.hargamonyet = 0
+				if (!('hargababihutan' in datas)) datas.hargababihutan = 0
+				if (!('hargababi' in datas)) datas.hargababi = 0
+				if (!('hargaayam' in datas)) datas.hargaayam = 0
 			} else db.data.datas = {
 				maingroupname: '',
 				aiprofile: '',
@@ -968,6 +980,18 @@ export async function handler(chatUpdate) {
 				graphshopjeruk: 0,
 				graphshoppisang: 0,
 				graphshopapel: 0,
+				hargabanteng: 0,
+				hargaharimau: 0,
+				hargagajah: 0,
+				hargakambing: 0,
+				hargapanda: 0,
+				hargabuaya: 0,
+				hargakerbau: 0,
+				hargasapi: 0,
+				hargamonyet: 0,
+				hargababihutan: 0,
+				hargababi: 0,
+				hargaayam: 0,
 			}
 		} catch (e) {
 			console.error(e)
