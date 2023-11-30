@@ -410,7 +410,7 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 	info += `%| 🐊 buaya:    ${formatRupiah(items.buy.buaya.money)}%\n`
 	info += `%| 🐃 kerbau:   ${formatRupiah(items.buy.kerbau.money)}%\n`
 	info += `%| 🐄 sapi:     ${formatRupiah(items.buy.sapi.money)}%\n`
-	info += `%| 🐒 monyet:   ${formatRupiah(items.buy.monyet.money)}%`
+	info += `%| 🐒 monyet:   ${formatRupiah(items.buy.monyet.money)}%\n`
 	info += `%| 🐗 babihutan:${formatRupiah(items.buy.babihutan.money)}%\n`
 	info += `%| 🐖 babi:     ${formatRupiah(items.buy.babi.money)}%\n`
 	info += `%| 🐔 ayam:     ${formatRupiah(items.buy.ayam.money)}%\n\n`
