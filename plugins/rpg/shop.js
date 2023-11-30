@@ -465,12 +465,12 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 	infos += `%| 🍌 pisang:   ${formatRupiah(db.data.datas.graphshoppisang)}%\n`
 	infos += `%| 🍎 apel:     ${formatRupiah(db.data.datas.graphshopapel)}%\n\n`
 	infos += `*━━━[ SELL ANIMALS ]━━━*\n`
-	infos += `%| 🐂 banteng:  ${formatRupiah(items.sell.banteng.money)}%\n%| 🐅 harimau:  ${formatRupiah(items.sell.harimau.money)}%\n`
-	infos += `%| 🐘 gajah:    ${formatRupiah(items.sell.gajah.money)}%\n%| 🐐 kambing:  ${formatRupiah(items.sell.kambing.money)}%\n`
-	infos += `%| 🐼 panda:    ${formatRupiah(items.sell.panda.money)}%\n%| 🐊 buaya:    ${formatRupiah(items.sell.buaya.money)}%\n`
-	infos += `%| 🐃 kerbau:   ${formatRupiah(items.sell.kerbau.money)}%\n%| 🐄 sapi:     ${formatRupiah(items.sell.sapi.money)}%\n`
-	infos += `%| 🐒 monyet:   ${formatRupiah(items.sell.monyet.money)}%\n%| 🐗 babihutan:${formatRupiah(items.sell.babihutan.money)}%\n`
-	infos += `%| 🐖 babi:     ${formatRupiah(items.sell.babi.money)}%\n%| 🐔 ayam:     ${formatRupiah(items.sell.ayam.money)}%\n\n`
+	infos += `%| 🐂 banteng:  ${formatRupiah(db.data.datas.hargabanteng)}%\n%| 🐅 harimau:  ${formatRupiah(db.data.datas.hargaharimau)}%\n`
+	infos += `%| 🐘 gajah:    ${formatRupiah(db.data.datas.hargagajah)}%\n%| 🐐 kambing:  ${formatRupiah(db.data.datas.hargakambing)}%\n`
+	infos += `%| 🐼 panda:    ${formatRupiah(db.data.datas.hargapanda)}%\n%| 🐊 buaya:    ${formatRupiah(db.data.datas.hargabuaya)}%\n`
+	infos += `%| 🐃 kerbau:   ${formatRupiah(db.data.datas.hargakerbau)}%\n%| 🐄 sapi:     ${formatRupiah(db.data.datas.hargasapi)}%\n`
+	infos += `%| 🐒 monyet:   ${formatRupiah(db.data.datas.hargamonyet)}%\n%| 🐗 babihutan:${formatRupiah(db.data.datas.hargababihutan)}%\n`
+	infos += `%| 🐖 babi:     ${formatRupiah(db.data.datas.hargababi)}%\n%| 🐔 ayam:     ${formatRupiah(db.data.datas.hargaayam)}%\n\n`
 	infos += `*━━━[ SEA ANIMALS ]━━━*\n`
 	infos += `%| 🐋 orca:     ${formatRupiah(items.sell.orca.money)}%\n%| 🐳 paus:     ${formatRupiah(items.sell.paus.money)}%\n`
 	infos += `%| 🐬 lumba:    ${formatRupiah(items.sell.lumba.money)}%\n%| 🦈 hiu:      ${formatRupiah(items.sell.hiu.money)}%\n`
@@ -564,6 +564,78 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 			user[item] -= total
 			user.money += db.data.datas.graphshopapel * total
 			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}* dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.graphshopapel * total)} ${paymentMethod}*`)
+		} else if (somematch(['banteng'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item}* untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]}${global.rpg.emoticon(item)}${item}* untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargabanteng * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}* dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargabanteng * total)} ${paymentMethod}*`)
+		} else if (somematch(['harimau'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargaharimau * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargaharimau * total)} ${paymentMethod}*`)
+		} else if (somematch(['gajah'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargagajah * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargagajah * total)} ${paymentMethod}*`)
+		} else if (somematch(['kambing'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargakambing * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargakambing * total)} ${paymentMethod}*`)
+		} else if (somematch(['panda'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargapanda * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargapanda * total)} ${paymentMethod}*`)
+		} else if (somematch(['buaya'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargabuaya * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargabuaya * total)} ${paymentMethod}*`)
+		} else if (somematch(['kerbau'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargakerbau * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargakerbau * total)} ${paymentMethod}*`)
+		} else if (somematch(['sapi'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item} untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargasapi * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item} dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargasapi * total)} ${paymentMethod}*`)
+		} else if (somematch(['monyet'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargamonyet * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}untuk dijual dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargamonyet * total)} ${paymentMethod}*`)
+		} else if (somematch(['babihutan'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargababihutan * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}untuk dijual dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargababihutan * total)} ${paymentMethod}*`)
+		} else if (somematch(['babi'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargababi * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)}${item}untuk dijual dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargababi * total)} ${paymentMethod}*`)
+		} else if (somematch(['ayam'])) {
+			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item}untuk dijual.`)
+			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]} ${global.rpg.emoticon(item)} ${item}untuk dijual.`)
+			user[item] -= total
+			user.money += db.data.datas.hargaayam * total
+			return m.reply(`Menjual *${total} ${global.rpg.emoticon(item)} ${item}untuk dijual dengan harga *${global.rpg.emoticon(paymentMethod)} ${formatRupiah(db.data.datas.hargaayam * total)} ${paymentMethod}*`)
 		} else {
 			if (user[item] == 0) return m.reply(`Kamu tidak memiliki *${global.rpg.emoticon(item)}${item}* untuk dijual.`)
 			if (user[item] < total) return m.reply(`Kamu hanya memiliki *${user[item]}${global.rpg.emoticon(item)}${item}* untuk dijual.`)
