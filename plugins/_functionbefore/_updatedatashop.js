@@ -19,11 +19,15 @@ export async function all(m, {conn}) {
         let rannumba = ranNumb(10, 10000);
         let rannumbb = ranNumb(10, 10000);
         let rannumbc = ranNumb(10, 10000);
-        datas.graphshopbanana = rannumba;
-        datas.graphshopapple = rannumbb;
-        datas.graphshopwatermelon = rannumbc;
+        let rannumbd = ranNumb(10, 10000);
+        let rannumbe = ranNumb(10, 10000);
+        datas.graphshopmangga = rannumba;
+        datas.graphshopanggur = rannumbb;
+        datas.graphshopjeruk = rannumbc;
+        datas.graphshoppisang = rannumbd;
+        datas.graphshopapel = rannumbe;
         //let graph = fs.writeFilesync('./datagraph.json', JSON.stringify(datas, null, '\t'))
-        let caption = `*Graph Shop*\n\nBanana: ${formatRupiah(rannumba)}\nApple: ${formatRupiah(rannumbb)}\nWatermelon: ${formatRupiah(rannumbc)}`;
+        let caption = `*Graph Shop*\n\nMangga: ${rannumba}\nAnggur: ${rannumbb}\nJeruk: ${rannumbc}\nPisang: ${rannumbd}\nApel: ${rannumbe}`;
         this.reply(global.rowner[0] + '@s.whatsapp.net', caption, null)
         datas.lastupdategraph = new Date() * 1;
     }

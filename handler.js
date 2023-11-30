@@ -928,9 +928,11 @@ export async function handler(chatUpdate) {
 				if (!('menfesschatcd' in datas)) datas.menfesschatcd = 0
 				if (!('backup' in datas)) datas.backup = 0
 				if (!('lastupdategraph' in datas)) datas.lastupdategraph = 0
-				if (!('graphshopbanana' in datas)) datas.graphshopbanana = 0
-				if (!('graphshopapple' in datas)) datas.graphshopapple = 0
-				if (!('graphshopwatermelon' in datas)) datas.graphshopwatermelon = 0
+				if (!('graphshopmangga' in datas)) datas.graphshopmangga = 0
+				if (!('graphshopanggur' in datas)) datas.graphshopanggur = 0
+				if (!('graphshopjeruk' in datas)) datas.graphshopjeruk = 0
+				if (!('graphshoppisang' in datas)) datas.graphshoppisang = 0
+				if (!('graphshopapel' in datas)) datas.graphshopapel = 0
 			} else db.data.datas = {
 				maingroupname: '',
 				aiprofile: '',
@@ -961,9 +963,11 @@ export async function handler(chatUpdate) {
 				menfesschatcd: 0,
 				backup: 0,
 				lastupdategraph: 0,
-				graphshopbanana: 0,
-				graphshopapple: 0,
-				graphshopwatermelon: 0
+				graphshopmangga: 0,
+				graphshopanggur: 0,
+				graphshopjeruk: 0,
+				graphshoppisang: 0,
+				graphshopapel: 0,
 			}
 		} catch (e) {
 			console.error(e)
