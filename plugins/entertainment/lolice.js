@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['fotololi']
 handler.tags = ['random']
 handler.command = /^(fotololi|loli)$/i
-
+handler.private = true
 export default handler
 
 async function shortUrl(url) {
