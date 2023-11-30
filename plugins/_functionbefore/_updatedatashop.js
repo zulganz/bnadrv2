@@ -52,26 +52,26 @@ export async function all(m, {conn}) {
         datas.hargaayam = rannumb12;
         //let graph = fs.writeFilesync('./datagraph.json', JSON.stringify(datas, null, '\t'))
         let caption = `*Harga Buah*\n\n`
-        caption += `%Mangga: ${rannumba}%\n`
-        caption += `%Anggur: ${rannumbb}%\n`
-        caption += `%Jeruk: ${rannumbc}%\n`
-        caption += `%Pisang: ${rannumbd}%\n`
-        caption += `%Apel: ${rannumbe}%\n\n`
+        caption += `%Mangga: ${formatRupiah(rannumba)}%\n`
+        caption += `%Anggur: ${formatRupiah(rannumbb)}%\n`
+        caption += `%Jeruk: ${formatRupiah(rannumbc)}%\n`
+        caption += `%Pisang: ${formatRupiah(rannumbd)}%\n`
+        caption += `%Apel: ${formatRupiah(rannumbe)}%\n\n`
         caption += `*Harga Hewan*\n\n`
-        caption += `%Banteng: ${rannumb1}%\n`
-        caption += `%Harimau: ${rannumb2}%\n`
-        caption += `%Gajah: ${rannumb3}%\n`
-        caption += `%Kambing: ${rannumb4}%\n`
-        caption += `%Panda: ${rannumb5}%\n`
-        caption += `%Buaya: ${rannumb6}%\n`
-        caption += `%Kerbau: ${rannumb7}%\n`
-        caption += `%Sapi: ${rannumb8}%\n`
-        caption += `%Monyet: ${rannumb9}%\n`
-        caption += `%Babi Hutan: ${rannumb10}%\n`
-        caption += `%Babi: ${rannumb11}%\n`
-        caption += `%Ayam: ${rannumb12}%\n\n`
+        caption += `%Banteng: ${formatRupiah(rannumb1)}%\n`
+        caption += `%Harimau: ${formatRupiah(rannumb2)}%\n`
+        caption += `%Gajah: ${formatRupiah(rannumb3)}%\n`
+        caption += `%Kambing: ${formatRupiah(rannumb4)}%\n`
+        caption += `%Panda: ${formatRupiah(rannumb5)}%\n`
+        caption += `%Buaya: ${formatRupiah(rannumb6)}%\n`
+        caption += `%Kerbau: ${formatRupiah(rannumb7)}%\n`
+        caption += `%Sapi: ${formatRupiah(rannumb8)}%\n`
+        caption += `%Monyet: ${formatRupiah(rannumb9)}%\n`
+        caption += `%Babi Hutan: ${formatRupiah(rannumb10)}%\n`
+        caption += `%Babi: ${formatRupiah(rannumb11)}%\n`
+        caption += `%Ayam: ${formatRupiah(rannumb12)}%\n\n`
         caption += `*Update: ${date}*`
-        this.reply(global.rowner[0] + '@s.whatsapp.net', caption, null)
+        this.reply(global.rowner[0] + '@s.whatsapp.net', caption.replaceAll('%', '```'), null)
         datas.lastupdategraph = new Date() * 1;
     }
     return !0
