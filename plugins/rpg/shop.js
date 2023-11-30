@@ -473,11 +473,11 @@ let handler = async (m, { command, usedPrefix, args, isPrems }) => {
 	infos += `%| 🐙 gurita:   ${formatRupiah(items.sell.gurita.money)}%\n%| 🦑 cumi:     ${formatRupiah(items.sell.cumi.money)}%\n`
 	infos += `%| 🦐 udang:    ${formatRupiah(items.sell.udang.money)}%\n\n`
 	infos += `*━━━[ SELL FRUITS ]━━━*\n`
-	infos += `%| 🥭 mangga:   ${formatRupiah(items.sell.mangga.money)}%\n`
-	infos += `%| 🍇 anggur:   ${formatRupiah(items.sell.anggur.money)}%\n`
-	infos += `%| 🍊 jeruk:    ${formatRupiah(items.sell.jeruk.money)}%\n`
-	infos += `%| 🍌 pisang:   ${formatRupiah(items.sell.pisang.money)}%\n`
-	infos += `%| 🍎 apel:     ${formatRupiah(items.sell.apel.money)}%\n\n`
+	infos += `%| 🥭 mangga:   ${formatRupiah(db.data.datas.graphshopmangga)}%\n`
+	infos += `%| 🍇 anggur:   ${formatRupiah(db.data.datas.graphshopanggur)}%\n`
+	infos += `%| 🍊 jeruk:    ${formatRupiah(db.data.datas.graphshopjeruk)}%\n`
+	infos += `%| 🍌 pisang:   ${formatRupiah(db.data.datas.graphshoppisang)}%\n`
+	infos += `%| 🍎 apel:     ${formatRupiah(db.data.datas.graphshopapel)}%\n\n`
 	infos += `*━━━[ PET SELL ]━━━*\n`
 	infos += `%| 🐎 horse:    ${formatRupiah(items.sell.horse.money)}%\n`
 	infos += `%| 🐈 cat:      ${formatRupiah(items.sell.cat.money)}%\n`
