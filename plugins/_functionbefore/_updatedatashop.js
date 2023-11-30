@@ -4,7 +4,7 @@ import fs from 'fs';
 
 export async function all(m, {conn}) {
     let datas = db.data.datas;
-    let cooldown = 1000 * 60 * 5; // if release it will be 24 Hours in millisecond
+    let cooldown = 1000 * 60 * 60 * 5; // if release it will be 24 Hours in millisecond
 
     if (new Date() * 1 - datas.lastupdategraph > cooldown) {
         let d = new Date()
