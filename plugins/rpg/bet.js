@@ -88,8 +88,6 @@ handler.tags = ['rpg']
 handler.help = ['judi [jumlah]']
 handler.command = /^(judi|bet)$/i
 
-handler.group = true
-
 handler.register = true
 export default handler
 
