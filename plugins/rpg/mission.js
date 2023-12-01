@@ -51,7 +51,7 @@ slect option
   }
 }
 
-handler.before = async m => {
+handler.before = async (m, {conn}) => {
   //conn.mission = conn.mission || {}
   conn.mission = conn.mission ? conn.mission : {}
   if(!(m.sender in conn.mission)) return
