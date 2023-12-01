@@ -19,6 +19,11 @@ export async function before(m) {
         user.stamina = 0;
     }
 
+    //money
+    if (user.money < 0) {
+        user.money = 0;
+    }
+
     //Sword                            
     if (user.sword > 0) {
         if (user.sworddurability < 1) {
