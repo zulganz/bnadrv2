@@ -282,19 +282,19 @@ const items = {
 			money: 6750,
 		},
 		mangga: {
-			money: db.data.datas.graphshopmangga,
+			money: null,
 		},
 		anggur: {
-			money: db.data.datas.graphshopanggur,
+			money: null,
 		},
 		jeruk: {
-			money: db.data.datas.graphshopjeruk,
+			money: null,
 		},
 		pisang: {
-			money: db.data.datas.graphshoppisang,
+			money: null,
 		},
 		apel: {
-			money: db.data.datas.graphshopapel,
+			money: null,
 		},
 		steak: {
 			money: 35000,
