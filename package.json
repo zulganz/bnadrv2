@@ -1,7 +1,7 @@
 {
   "name": "bandar-md",
   "version": "6.0.0",
-  "description": "WhatsApp Bot - Recoded by Zerenity",
+  "description": "Whatsapp bot",
   "main": "main.js",
   "type": "module",
   "directories": {
